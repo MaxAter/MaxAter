@@ -77,8 +77,8 @@ code{
   display:grid;
   place-items:center;
   border-radius: 12px;
-  background: linear-gradient(135deg, var(--navy), var(--navy2));
-  color: white;
+  background: #facc15;
+  color: #1f2937;
   font-weight: 800;
   letter-spacing: .02em;
 }
