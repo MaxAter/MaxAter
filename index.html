@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Johnny Ater | Comedian</title>
-  <meta name="description" content="Official website of comedian Johnny Ater. Tour dates, videos, press kit, and booking." />
+  <meta name="description" content="Official website of comedian Johnny Ater. Show dates, videos, press kit, and booking." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- Premium, clean font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -18,75 +18,66 @@
   <!-- Top bar -->
   <header class="topbar">
     <div class="container topbar-inner">
-      <a class="brand" href="#top" aria-label="Johnny Ater home">
-        <span class="brand-mark">JA</span>
-        <span class="brand-name">Johnny Ater</span>
-      </a>
+      <div class="topbar-left">
+        <a class="brand" href="#top" aria-label="Johnny Ater home">
+          <span class="brand-mark">JA</span>
+          <span class="brand-name">Johnny Ater</span>
+        </a>
 
-      <button class="nav-toggle" id="navToggle" aria-controls="siteNav" aria-expanded="false">
-        <span class="sr-only">Open menu</span>
-        <span class="nav-toggle-bars" aria-hidden="true"></span>
-      </button>
+        <nav class="nav" id="siteNav">
+          <a href="#tour">Show Dates</a>
+          <a href="#watch">Specials</a>
+          <a href="#press">Press Kit</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
 
-      <nav class="nav" id="siteNav">
-        <a href="#tour">Tour</a>
-        <a href="#watch">Watch</a>
-        <a href="#press">Press Kit</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="nav-cta">Book</a>
-      </nav>
+      <div class="topbar-right">
+        <div class="socials" aria-label="Social links">
+          <a class="social-link" href="#" aria-label="Instagram">IG</a>
+          <a class="social-link" href="#" aria-label="Facebook">FB</a>
+          <a class="social-link" href="#" aria-label="X">X</a>
+          <a class="social-link" href="#" aria-label="YouTube">YT</a>
+          <a class="social-link" href="#" aria-label="TikTok">TT</a>
+        </div>
+
+        <button class="nav-toggle" id="navToggle" aria-controls="siteNav" aria-expanded="false">
+          <span class="sr-only">Open menu</span>
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+      </div>
     </div>
   </header>
 
   <main id="top">
     <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Comedian • Maine</p>
-          <h1 class="hero-title">
-            Johnny Ater
-            <span class="hero-title-soft">Comedy</span>
-          </h1>
-
-          <p class="hero-sub">
-            Clean, premium comedian-site vibe. Big shows, simple navigation, fast to book.
-            Replace this line with Johnny’s real one-liner / positioning.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Book Johnny</a>
-            <a class="btn btn-ghost" href="#tour">See Tour Dates</a>
-          </div>
-
-          <ul class="hero-meta">
-            <li><span class="dot"></span> Corporate & private events</li>
-            <li><span class="dot"></span> Clubs & theaters</li>
-            <li><span class="dot"></span> Available for bookings</li>
-          </ul>
-        </div>
-
-        <div class="hero-card">
-          <div class="hero-photo" role="img" aria-label="Johnny Ater promotional photo"></div>
-
-          <div class="hero-card-inner">
-            <h2 class="card-title">Next Show</h2>
-            <p class="card-line" id="nextShowLine">Loading…</p>
-            <div class="card-actions">
-              <a class="btn btn-primary btn-small" id="nextShowTickets" href="#tour">Tickets</a>
-              <a class="btn btn-ghost btn-small" href="#watch">Watch</a>
-            </div>
-            <p class="card-note">Update dates in <code>script.js</code>.</p>
-          </div>
-        </div>
+    <section class="hero hero-image" aria-label="Johnny Ater hero image">
+      <div class="container">
+        <div class="hero-inset" role="img" aria-label="Johnny Ater hero image"></div>
       </div>
     </section>
 
     <!-- TOUR -->
-    <section id="tour" class="section section-alt">
+    <section id="tour" class="section tour-feature">
       <div class="container">
+        <div class="tour-banner">
+          <p class="tour-kicker">On Tour Now</p>
+          <h2 class="tour-title">Johnny Ater</h2>
+          <div class="tour-next">
+            <p class="tour-next-label">Next show</p>
+            <p class="tour-next-line" id="nextShowLine">Loading…</p>
+            <div class="tour-next-actions">
+              <a class="btn btn-primary btn-small" id="nextShowTickets" href="#tour">Tickets</a>
+              <a class="btn btn-ghost btn-small" href="#contact">Book</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container tour-list-block">
         <div class="section-head">
-          <h2 class="h2">Next Stop</h2>
+          <h2 class="h2">Show Dates</h2>
           <p class="lead">Catch Johnny in a city near you!</p>
         </div>
 
@@ -94,8 +85,8 @@
           <div class="tour-list" id="tourList" aria-live="polite"></div>
         </div>
 
-        <details class="date-editor" id="dateEditor">
-          <summary class="h3">Edit tour dates (local)</summary>
+        <details class="date-editor local-only" id="dateEditor">
+          <summary class="h3">Edit show dates (local)</summary>
           <p class="muted small">Changes save in this browser only and update the page instantly.</p>
           <form id="dateEditorForm">
             <div class="date-editor-table" id="dateEditorTable"></div>
@@ -107,10 +98,6 @@
             <p class="muted small" id="dateEditorNote"></p>
           </form>
         </details>
-
-        <div class="section-footer">
-          <a class="btn btn-ghost" href="#contact">Booking inquiries</a>
-        </div>
       </div>
     </section>
 
@@ -159,6 +146,49 @@
             </a>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- INSTAGRAM -->
+    <section id="instagram" class="section section-alt instagram-section" data-instagram-handle="johnnyater">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">Instagram</h2>
+          <p class="lead">
+            Latest posts from
+            <a id="instagramProfileLink" href="https://www.instagram.com/johnnyater/" target="_blank" rel="noreferrer">
+              @<span id="instagramHandleText">johnnyater</span>
+            </a>
+          </p>
+        </div>
+
+        <div class="instagram-embed">
+          <iframe
+            id="instagramEmbed"
+            title="Instagram feed"
+            src="https://www.instagram.com/johnnyater/embed"
+            loading="lazy"
+            allowtransparency="true"
+          ></iframe>
+        </div>
+        <p class="muted small instagram-fallback">
+          If the feed doesn’t load, open the profile directly from the link above.
+        </p>
+
+        <details class="date-editor local-only" id="instagramEditor">
+          <summary class="h3">Edit Instagram (local)</summary>
+          <form id="instagramEditorForm">
+            <label class="field">
+              <span>Instagram handle</span>
+              <input id="instagramHandleInput" type="text" placeholder="johnnyater" />
+            </label>
+            <div class="date-editor-actions">
+              <button class="btn btn-primary btn-small" type="submit">Save handle</button>
+              <button class="btn btn-ghost btn-small" type="button" id="resetInstagramHandle">Reset</button>
+            </div>
+            <p class="muted small" id="instagramEditorNote"></p>
+          </form>
+        </details>
       </div>
     </section>
 
@@ -286,6 +316,226 @@
         </div>
       </div>
     </section>
+
+    <!-- LOCAL EDITORS -->
+    <section id="siteEditor" class="section section-alt local-only">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">Local Site Editors</h2>
+          <p class="lead">Visible only on localhost. Changes save in this browser.</p>
+        </div>
+
+        <form class="site-editor" id="siteEditorForm">
+          <details class="editor-block" open>
+            <summary class="h3">Hero</summary>
+            <div class="editor-grid">
+              <label class="field">
+                <span>Eyebrow</span>
+                <input id="editorHeroEyebrow" type="text" />
+              </label>
+              <label class="field">
+                <span>Title</span>
+                <input id="editorHeroTitle" type="text" />
+              </label>
+              <label class="field">
+                <span>Title (soft)</span>
+                <input id="editorHeroTitleSoft" type="text" />
+              </label>
+              <label class="field editor-span-2">
+                <span>Subheading</span>
+                <textarea id="editorHeroSub" rows="3"></textarea>
+              </label>
+              <label class="field">
+                <span>Primary CTA text</span>
+                <input id="editorHeroPrimaryText" type="text" />
+              </label>
+              <label class="field">
+                <span>Primary CTA link</span>
+                <input id="editorHeroPrimaryHref" type="text" />
+              </label>
+              <label class="field">
+                <span>Secondary CTA text</span>
+                <input id="editorHeroSecondaryText" type="text" />
+              </label>
+              <label class="field">
+                <span>Secondary CTA link</span>
+                <input id="editorHeroSecondaryHref" type="text" />
+              </label>
+            </div>
+          </details>
+
+          <details class="editor-block">
+            <summary class="h3">Watch</summary>
+            <div class="editor-grid">
+              <label class="field editor-span-2">
+                <span>Embed URL (YouTube)</span>
+                <input id="editorWatchEmbed" type="url" />
+              </label>
+              <label class="field">
+                <span>Card 1 title</span>
+                <input id="editorWatchCard1Title" type="text" />
+              </label>
+              <label class="field">
+                <span>Card 1 description</span>
+                <input id="editorWatchCard1Sub" type="text" />
+              </label>
+              <label class="field editor-span-2">
+                <span>Card 1 link</span>
+                <input id="editorWatchCard1Href" type="url" />
+              </label>
+              <label class="field">
+                <span>Card 2 title</span>
+                <input id="editorWatchCard2Title" type="text" />
+              </label>
+              <label class="field">
+                <span>Card 2 description</span>
+                <input id="editorWatchCard2Sub" type="text" />
+              </label>
+              <label class="field editor-span-2">
+                <span>Card 2 link</span>
+                <input id="editorWatchCard2Href" type="url" />
+              </label>
+              <label class="field">
+                <span>Card 3 title</span>
+                <input id="editorWatchCard3Title" type="text" />
+              </label>
+              <label class="field">
+                <span>Card 3 description</span>
+                <input id="editorWatchCard3Sub" type="text" />
+              </label>
+              <label class="field editor-span-2">
+                <span>Card 3 link</span>
+                <input id="editorWatchCard3Href" type="url" />
+              </label>
+            </div>
+          </details>
+
+          <details class="editor-block">
+            <summary class="h3">Press Kit</summary>
+            <div class="editor-grid">
+              <label class="field">
+                <span>Press kit text</span>
+                <input id="editorPressLink1Text" type="text" />
+              </label>
+              <label class="field">
+                <span>Press kit URL</span>
+                <input id="editorPressLink1Href" type="url" />
+              </label>
+              <label class="field">
+                <span>Photos text</span>
+                <input id="editorPressLink2Text" type="text" />
+              </label>
+              <label class="field">
+                <span>Photos URL</span>
+                <input id="editorPressLink2Href" type="url" />
+              </label>
+              <label class="field">
+                <span>Tech rider text</span>
+                <input id="editorPressLink3Text" type="text" />
+              </label>
+              <label class="field">
+                <span>Tech rider URL</span>
+                <input id="editorPressLink3Href" type="url" />
+              </label>
+              <label class="field editor-span-2">
+                <span>Short bio</span>
+                <textarea id="editorPressShortBio" rows="4"></textarea>
+              </label>
+            </div>
+          </details>
+
+          <details class="editor-block">
+            <summary class="h3">About</summary>
+            <div class="editor-grid">
+              <label class="field editor-span-2">
+                <span>Long bio</span>
+                <textarea id="editorAboutText" rows="5"></textarea>
+              </label>
+            </div>
+          </details>
+
+          <details class="editor-block">
+            <summary class="h3">Contact</summary>
+            <div class="editor-grid">
+              <label class="field">
+                <span>Email</span>
+                <input id="editorContactEmail" type="email" />
+              </label>
+              <label class="field">
+                <span>Phone (display)</span>
+                <input id="editorContactPhone" type="text" />
+              </label>
+              <label class="field">
+                <span>Phone link (tel:)</span>
+                <input id="editorContactPhoneHref" type="text" />
+              </label>
+              <label class="field">
+                <span>Location</span>
+                <input id="editorContactLocation" type="text" />
+              </label>
+            </div>
+          </details>
+
+          <details class="editor-block">
+            <summary class="h3">Social Links</summary>
+            <div class="editor-grid">
+              <label class="field">
+                <span>Instagram URL</span>
+                <input id="editorSocialInstagram" type="url" />
+              </label>
+              <label class="field">
+                <span>YouTube URL</span>
+                <input id="editorSocialYouTube" type="url" />
+              </label>
+              <label class="field">
+                <span>TikTok URL</span>
+                <input id="editorSocialTikTok" type="url" />
+              </label>
+              <label class="field">
+                <span>Facebook URL</span>
+                <input id="editorSocialFacebook" type="url" />
+              </label>
+            </div>
+          </details>
+
+          <details class="editor-block">
+            <summary class="h3">Brand</summary>
+            <div class="editor-grid">
+              <label class="field editor-span-2">
+                <span>Logo image URL</span>
+                <input id="editorBrandLogo" type="text" />
+              </label>
+              <label class="field editor-span-2">
+                <span>Logo alt text</span>
+                <input id="editorBrandLogoAlt" type="text" />
+              </label>
+              <label class="field">
+                <span>Primary color</span>
+                <input id="editorBrandPrimary" type="text" placeholder="#0b1b3a" />
+              </label>
+              <label class="field">
+                <span>Secondary color</span>
+                <input id="editorBrandSecondary" type="text" placeholder="#102a5a" />
+              </label>
+              <label class="field">
+                <span>Button style</span>
+                <select id="editorButtonStyle">
+                  <option value="pill">Pill</option>
+                  <option value="rounded">Rounded</option>
+                  <option value="square">Square</option>
+                </select>
+              </label>
+            </div>
+          </details>
+
+          <div class="site-editor-actions">
+            <button class="btn btn-primary btn-small" type="submit">Save all changes</button>
+            <button class="btn btn-ghost btn-small" type="button" id="resetSiteEditor">Reset to defaults</button>
+            <span class="muted small" id="siteEditorNote"></span>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -296,6 +546,35 @@
       </p>
     </div>
   </footer>
+
+  <div class="chat-widget local-only" id="chatWidget">
+    <button class="chat-toggle" id="chatToggle" type="button" aria-expanded="true">
+      Local Chat
+    </button>
+    <div class="chat-panel" id="chatPanel">
+      <div class="chat-header">
+        <span>Local Chat</span>
+        <button class="chat-minimize" id="chatMinimize" type="button" aria-label="Minimize">–</button>
+      </div>
+      <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
+      <form class="chat-form" id="chatForm">
+        <input id="chatInput" type="text" placeholder="Type a message..." autocomplete="off" />
+        <button class="btn btn-primary btn-small" type="submit">Send</button>
+      </form>
+      <details class="chat-settings">
+        <summary>Pipeline</summary>
+        <label class="field">
+          <span>Endpoint URL</span>
+          <input id="chatEndpoint" type="url" placeholder="http://localhost:3000/api/chat" />
+        </label>
+        <div class="chat-settings-actions">
+          <button class="btn btn-ghost btn-small" type="button" id="chatSaveSettings">Save</button>
+          <button class="btn btn-ghost btn-small" type="button" id="chatClearHistory">Clear</button>
+        </div>
+        <p class="muted small" id="chatStatus"></p>
+      </details>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
