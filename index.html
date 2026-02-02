@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Johnny Ater | Comedian</title>
+  <meta name="description" content="Official website of comedian Johnny Ater. Tour dates, videos, press kit, and booking." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Premium, clean font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top" aria-label="Johnny Ater home">
+        <span class="brand-mark">JA</span>
+        <span class="brand-name">Johnny Ater</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-controls="siteNav" aria-expanded="false">
+        <span class="sr-only">Open menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" id="siteNav">
+        <a href="#tour">Tour</a>
+        <a href="#watch">Watch</a>
+        <a href="#press">Press Kit</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-cta">Book</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Comedian • Maine</p>
+          <h1 class="hero-title">
+            Johnny Ater
+            <span class="hero-title-soft">Comedy</span>
+          </h1>
+
+          <p class="hero-sub">
+            Clean, premium comedian-site vibe. Big shows, simple navigation, fast to book.
+            Replace this line with Johnny’s real one-liner / positioning.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Book Johnny</a>
+            <a class="btn btn-ghost" href="#tour">See Tour Dates</a>
+          </div>
+
+          <ul class="hero-meta">
+            <li><span class="dot"></span> Corporate & private events</li>
+            <li><span class="dot"></span> Clubs & theaters</li>
+            <li><span class="dot"></span> Available for bookings</li>
+          </ul>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-photo" role="img" aria-label="Johnny Ater promotional photo"></div>
+
+          <div class="hero-card-inner">
+            <h2 class="card-title">Next Show</h2>
+            <p class="card-line" id="nextShowLine">Loading…</p>
+            <div class="card-actions">
+              <a class="btn btn-primary btn-small" id="nextShowTickets" href="#tour">Tickets</a>
+              <a class="btn btn-ghost btn-small" href="#watch">Watch</a>
+            </div>
+            <p class="card-note">Update dates in <code>script.js</code>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOUR -->
+    <section id="tour" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">Next Stop</h2>
+          <p class="lead">Catch Johnny in a city near you!</p>
+        </div>
+
+        <div class="tour-wrap">
+          <div class="tour-list" id="tourList" aria-live="polite"></div>
+        </div>
+
+        <details class="date-editor" id="dateEditor">
+          <summary class="h3">Edit tour dates (local)</summary>
+          <p class="muted small">Changes save in this browser only and update the page instantly.</p>
+          <form id="dateEditorForm">
+            <div class="date-editor-table" id="dateEditorTable"></div>
+            <div class="date-editor-actions">
+              <button class="btn btn-ghost btn-small" type="button" id="addShowRow">Add date</button>
+              <button class="btn btn-primary btn-small" type="submit">Save dates</button>
+              <button class="btn btn-ghost btn-small" type="button" id="resetShowDates">Reset</button>
+            </div>
+            <p class="muted small" id="dateEditorNote"></p>
+          </form>
+        </details>
+
+        <div class="section-footer">
+          <a class="btn btn-ghost" href="#contact">Booking inquiries</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WATCH -->
+    <section id="watch" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">Watch</h2>
+          <p class="lead">One featured clip + a few strong highlights. No clutter.</p>
+        </div>
+
+        <div class="watch-grid">
+          <div class="video-frame">
+            <!-- Replace the src with a real YouTube embed -->
+            <iframe
+              title="Featured clip"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="cards">
+            <a class="mini-card" href="#" target="_blank" rel="noreferrer">
+              <div class="mini-thumb"></div>
+              <div>
+                <p class="mini-title">Clip Title</p>
+                <p class="mini-sub">Short description</p>
+              </div>
+            </a>
+
+            <a class="mini-card" href="#" target="_blank" rel="noreferrer">
+              <div class="mini-thumb"></div>
+              <div>
+                <p class="mini-title">Clip Title</p>
+                <p class="mini-sub">Short description</p>
+              </div>
+            </a>
+
+            <a class="mini-card" href="#" target="_blank" rel="noreferrer">
+              <div class="mini-thumb"></div>
+              <div>
+                <p class="mini-title">Clip Title</p>
+                <p class="mini-sub">Short description</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESS KIT -->
+    <section id="press" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">Press Kit</h2>
+          <p class="lead">One-sheet, photos, credits, and booking details.</p>
+        </div>
+
+        <div class="press-grid">
+          <div class="press-card">
+            <h3 class="h3">Quick Links</h3>
+            <div class="press-links">
+              <a class="btn btn-primary" href="#" target="_blank" rel="noreferrer">Download Press Kit (PDF)</a>
+              <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer">High-Res Photos</a>
+              <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer">Tech / Stage Requirements</a>
+            </div>
+            <p class="muted">Replace these links with your real press kit URLs.</p>
+          </div>
+
+          <div class="press-card">
+            <h3 class="h3">Selected Credits</h3>
+            <ul class="bullets">
+              <li>Feature credit / festival / network (replace)</li>
+              <li>Opener for: (replace)</li>
+              <li>Notable venue or series (replace)</li>
+              <li>Podcast / radio / press mention (replace)</li>
+            </ul>
+          </div>
+
+          <div class="press-card">
+            <h3 class="h3">Short Bio</h3>
+            <p class="muted">
+              Paste Johnny’s short bio here (3–5 sentences). Keep it punchy and “bookable.”
+              This block should read great on a festival/casino/corporate page.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">About</h2>
+          <p class="lead">The longer bio lives here. Still clean and readable.</p>
+        </div>
+
+        <div class="about">
+          <p>
+            Write a longer bio here. Aim for 2–4 short paragraphs. Keep plenty of whitespace.
+            If you want, paste Johnny’s existing site text and I’ll rewrite it to fit this tone.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight">
+              <p class="highlight-kicker">Style</p>
+              <p class="highlight-main">Observational • Storytelling • Crowd work</p>
+            </div>
+            <div class="highlight">
+              <p class="highlight-kicker">Based in</p>
+              <p class="highlight-main">Maine (available to travel)</p>
+            </div>
+            <div class="highlight">
+              <p class="highlight-kicker">Best for</p>
+              <p class="highlight-main">Corporate • Clubs • Private events</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">Booking</h2>
+          <p class="lead">Make it effortless to reach you. Put email/phone here, always.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3 class="h3">Direct</h3>
+            <p class="muted">Replace with real contact info:</p>
+
+            <div class="contact-lines">
+              <p><strong>Email:</strong> <a href="mailto:Ater02@comcast.net">Ater02@comcast.net</a></p>
+              <p><strong>Phone:</strong> <a href="tel:+12075550123">(207) 555-0123</a></p>
+              <p><strong>Location:</strong> Maine, USA</p>
+            </div>
+
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="mailto:Ater02@comcast.net?subject=Booking%20Inquiry%20-%20Johnny%20Ater">
+                Email Booking
+              </a>
+              <a class="btn btn-ghost" href="#press">Press Kit</a>
+            </div>
+          </div>
+
+          <form class="contact-card" id="contactForm">
+            <h3 class="h3">Quick Inquiry</h3>
+
+            <!-- This is a frontend-only form (no backend). It will “simulate” submit. -->
+            <label class="field">
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@email.com" required />
+            </label>
+
+            <label class="field">
+              <span>Event details</span>
+              <textarea name="details" rows="5" placeholder="Date, city, venue, budget, and any notes"></textarea>
+            </label>
+
+            <button class="btn btn-primary" type="submit">Send Inquiry</button>
+            <p class="muted small" id="formNote"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Johnny Ater</p>
+      <p class="footer-links">
+        <a href="#top">Back to top</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
