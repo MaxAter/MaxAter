@@ -140,13 +140,10 @@ def yin_pitch(audio: np.ndarray, sr: int, fmin: float = 27.5, fmax: float = 4200
     nfft = 1 << (2 * n - 1).bit_length()
     W = np.fft.rfft(w, nfft)
     acf = np.fft.irfft(W * np.conj(W), nfft)[:n]
-    energy = np.cumsum(w * w)
-    energy = energy[-1] - np.concatenate(([0.0], energy[:-1]))
-    # d(tau) ≈ 2*(energy[0] - acf[tau]) with edge handling
+    # d(tau) ≈ energy of residual between signal and delayed copy
     d = np.empty(tau_max + 1, dtype=np.float64)
     d[0] = 0.0
     for tau in range(1, tau_max + 1):
-        # cumulative energy of first n-tau samples minus 2*acf
         e0 = np.sum(w[: n - tau] ** 2)
         e1 = np.sum(w[tau:] ** 2)
         d[tau] = e0 + e1 - 2.0 * acf[tau]
