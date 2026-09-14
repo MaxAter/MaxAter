@@ -2815,8 +2815,7 @@
       "band": "sub",
       "density": "heavy",
       "styles": [
-        "edm-pop",
-        "dance-disco-pop"
+        "edm-pop"
       ],
       "conflictsWith": [
         "808-kick"

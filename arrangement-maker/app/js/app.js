@@ -95,13 +95,14 @@ async function generate() {
   if (!catalog) return;
   generateBtn.classList.add("spinning");
   generateBtn.disabled = true;
-  await new Promise((resolve) => setTimeout(resolve, 280));
+  await new Promise((resolve) => setTimeout(resolve, 420));
   const result = window.ArrangementEngine.generateArrangement(catalog, {
     styleId: selectedStyle || undefined,
   });
   renderArrangement(result);
   generateBtn.classList.remove("spinning");
   generateBtn.disabled = false;
+  sheet.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 chipsEl.addEventListener("click", (event) => {

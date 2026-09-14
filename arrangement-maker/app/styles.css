@@ -125,6 +125,8 @@ h1 {
   appearance: none;
   width: 168px;
   height: 168px;
+  z-index: 2;
+  pointer-events: auto;
   border-radius: 50%;
   border: 0;
   cursor: pointer;
@@ -186,9 +188,13 @@ h1 {
 .stat strong { font-family: Fraunces, Georgia, serif; font-size: 26px; }
 .stat span { display: block; color: var(--muted); font-size: 13px; margin-top: 4px; }
 
-.timeline { display: flex; gap: 6px; align-items: stretch; margin: 8px 0 22px; }
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(108px, 1fr));
+  gap: 8px;
+  margin: 8px 0 22px;
+}
 .section-block {
-  flex: 1;
   min-width: 0;
   border-radius: 14px;
   padding: 12px 10px 10px;
@@ -197,7 +203,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 118px;
+  min-height: 132px;
 }
 .section-block em { font-style: normal; font-size: 11px; color: var(--gold); font-weight: 700; }
 .section-block h3 { margin: 4px 0; font-size: 14px; }
@@ -217,7 +223,15 @@ h1 {
   background: linear-gradient(180deg, var(--gold), var(--rose));
   box-shadow: 0 8px 18px rgba(210, 122, 98, .18);
 }
-.energy-col span { font-size: 10px; color: var(--dim); text-align: center; line-height: 1.2; }
+.energy-col span {
+  font-size: 10px;
+  color: var(--dim);
+  text-align: center;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
 .grid-2 { display: grid; grid-template-columns: 1.1fr .9fr; gap: 16px; }
 h3.block-title {
