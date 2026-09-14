@@ -1,0 +1,16 @@
+{
+  "name": "Johnny Ater Comedian Site",
+  "ports": [
+    {
+      "name": "static server",
+      "port": 5501
+    }
+  ],
+  "terminals": [
+    {
+      "name": "static-server",
+      "command": "python3 -m http.server 5501 --bind 0.0.0.0",
+      "description": "Serves the static site (index.html, styles.css, script.js, assets) at http://localhost:5501"
+    }
+  ]
+}
