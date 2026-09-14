@@ -3,6 +3,13 @@ set -euo pipefail
 cd "$(dirname "$0")"
 
 if ! command -v npm >/dev/null; then
+  if [[ "$(uname -s)" == "Darwin" ]] && command -v brew >/dev/null; then
+    echo "Installing Node with Homebrew…"
+    brew install node
+  fi
+fi
+
+if ! command -v npm >/dev/null; then
   echo "Install Node.js from https://nodejs.org then run this again."
   exit 1
 fi

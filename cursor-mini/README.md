@@ -2,21 +2,34 @@
 
 Floating satellite for big-picture Pro Tools automations. The chrome is built to sit next to Avid’s dark UI: metal panel, recessed LCD, latching keys, orange execute.
 
-## Run on your Mac (now)
+## Start on the Mac mini (one paste)
 
-Pro Tools open, session loaded, then in Terminal:
+Open **Terminal** on the Mac mini. Pro Tools can be open with a session. Paste this whole block:
 
 ```bash
-cd /path/to/MaxAter
-git fetch origin cursor/cursor-mini-avid-eefc
-git checkout cursor/cursor-mini-avid-eefc
-cd cursor-mini
-./start.sh
+DIR="$HOME/CursorMini"
+if [ ! -d "$DIR/.git" ]; then
+  git clone -b cursor/start-cursor-mini-84a8 https://github.com/MaxAter/MaxAter.git "$DIR"
+else
+  git -C "$DIR" fetch origin cursor/start-cursor-mini-84a8
+  git -C "$DIR" checkout cursor/start-cursor-mini-84a8
+fi
+cd "$DIR/cursor-mini" && ./start.sh
 ```
 
-That installs Node deps, installs `py-ptsl`, and opens the always-on-top palette. If Pro Tools is open, the LCD should say **LIVE**. If it says **DEMO**, the UI still works; markers will not hit the session until PTSL connects (`localhost:31416`).
+Or, after this branch is on GitHub:
 
-Need Node? `brew install node`
+```bash
+curl -fsSL https://raw.githubusercontent.com/MaxAter/MaxAter/cursor/start-cursor-mini-84a8/cursor-mini/bootstrap.sh | bash
+```
+
+That clones into **`~/CursorMini`** (it will not change `~/MaxAter`), installs Node deps, and opens the always-on-top palette.
+
+Need Node? The launcher runs `brew install node` when it can. Otherwise: `brew install node`
+
+If Pro Tools is open, the LCD should say **LIVE**. If it says **DEMO**, the UI still works; markers will not hit the session until PTSL connects (`localhost:31416`).
+
+After the first clone you can also double-click `Start Cursor Mini.command` in `~/CursorMini/cursor-mini`.
 
 ## What it does
 
@@ -32,17 +45,6 @@ The palette stays on top of other windows. When Pro Tools is frontmost it attach
 | **SNAPSHOT** | Reads session name, tracks, and markers into the scribble |
 
 Locate keys jump to those markers after a form is laid down. Tempo on the panel is used when writing marker times.
-
-## Run on the Mac mini
-
-```bash
-cd cursor-mini
-npm install
-python3 -m pip install -r host/requirements.txt
-npm start
-```
-
-Pro Tools must be open, with a session loaded, for **LIVE** mode. Cursor Mini talks to PTSL on `localhost:31416` through `host/protools_bridge.py` (`py-ptsl`). If Pro Tools is closed, the panel still works in **DEMO** so you can learn the surface.
 
 `ON TOP` keeps the palette above other apps. `ATTACH` parks it against the Pro Tools window.
 
