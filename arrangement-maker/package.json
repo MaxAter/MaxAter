@@ -1,0 +1,52 @@
+{
+  "name": "arrangement-maker",
+  "productName": "Arrangement Maker",
+  "version": "1.0.0",
+  "description": "Desktop arrangement generator for modern pop using attested chart conventions. Never suggests a song key.",
+  "main": "electron/main.js",
+  "author": "Max Ater",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "preview": "python3 -m http.server 4173 --directory .",
+    "build:mac": "electron-builder --mac",
+    "build:mac:dir": "electron-builder --mac --dir",
+    "build:icon": "node scripts/make-icns.js",
+    "test": "node scripts/test-engine.js"
+  },
+  "build": {
+    "appId": "com.maxater.arrangementmaker",
+    "productName": "Arrangement Maker",
+    "copyright": "Copyright © 2026 Max Ater",
+    "directories": {
+      "buildResources": "build",
+      "output": "dist"
+    },
+    "files": [
+      "electron/**/*",
+      "app/**/*",
+      "data/**/*",
+      "build/icon.png",
+      "build/icon.icns"
+    ],
+    "mac": {
+      "icon": "build/icon.icns",
+      "category": "public.app-category.music",
+      "target": [
+        { "target": "dmg", "arch": ["arm64", "x64"] },
+        { "target": "zip", "arch": ["arm64", "x64"] }
+      ],
+      "hardenedRuntime": false,
+      "identity": null
+    },
+    "dmg": {
+      "icon": "build/icon.icns",
+      "artifactName": "Arrangement-Maker-${version}-${arch}.dmg"
+    }
+  },
+  "devDependencies": {
+    "electron": "^37.2.0",
+    "electron-builder": "^26.0.12",
+    "png2icons": "^2.0.1"
+  }
+}

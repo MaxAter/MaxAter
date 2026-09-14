@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arrangement Maker</title>
+  <meta name="description" content="One-button modern pop arrangements from attested chart conventions. Never suggests a song key." />
+  <link rel="icon" type="image/png" href="../build/icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,680&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="top">
+    <div class="brand">
+      <img class="brand-mark" src="../build/icon.png" alt="" width="36" height="36" />
+      <div>
+        <p class="brand-kicker">Modern pop · attested conventions</p>
+        <h1>Arrangement Maker</h1>
+      </div>
+    </div>
+    <p class="promise">Structure, tempo, energy, instruments, and production notes. Never a song key.</p>
+  </header>
+
+  <main>
+    <section class="console" aria-label="Generate">
+      <div class="console-copy">
+        <h2>One-button arrangement</h2>
+        <p>Each generate draws only from researched Billboard-era pop practice: forms, BPM windows, time signatures, section lengths, energy functions, and instrument pairings with sources.</p>
+      </div>
+      <fieldset class="lanes">
+        <legend>Optional lane</legend>
+        <div class="chips" id="styleChips"></div>
+      </fieldset>
+      <button type="button" class="generate" id="generateBtn">
+        <span class="generate-orb" aria-hidden="true"></span>
+        <span class="generate-label">Generate arrangement</span>
+      </button>
+    </section>
+
+    <section class="sheet empty" id="sheet" aria-live="polite">
+      <p class="empty-copy">Press generate to draw a coherent modern-pop arrangement.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Sources live in <code>data/SOURCES.md</code>. Patterns are encoded only when they can be pointed to.</p>
+  </footer>
+
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
