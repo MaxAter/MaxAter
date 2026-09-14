@@ -8,7 +8,7 @@ const BRIDGE = path.join(__dirname, "..", "host", "protools_bridge.py");
 
 let mainWindow = null;
 let attachEnabled = true;
-let lastHost = "";
+let lastHost = process.platform === "darwin" ? "" : "Pro Tools";
 
 function createWindow() {
   const isMac = process.platform === "darwin";
@@ -157,8 +157,8 @@ ipcMain.handle("get-status", async () => {
   const status = await runBridge({ cmd: "status" });
   return {
     ...status,
-    hostApp: lastHost,
-    isProTools: /pro tools/i.test(lastHost),
+    hostApp: lastHost || "Pro Tools",
+    isProTools: process.platform !== "darwin" || /pro tools/i.test(lastHost),
     alwaysOnTop: mainWindow ? mainWindow.isAlwaysOnTop() : true,
     attach: attachEnabled,
   };
