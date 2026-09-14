@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cursor Mini — Pro Tools</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="studio" aria-hidden="true">
+    <div class="pt-window">
+      <div class="pt-window-bar">
+        <span class="pt-window-dots"><i></i><i></i><i></i></span>
+        <span>Edit: Demo Session</span>
+      </div>
+      <div class="pt-ruler">
+        <span>1</span><span>9</span><span>25</span><span>33</span><span>41</span><span>57</span><span>65</span><span>73</span><span>81</span><span>97</span>
+      </div>
+      <div class="pt-tracks">
+        <div class="pt-track t-kick"><b><s></s>Kick</b><i class="clip"></i></div>
+        <div class="pt-track t-snare"><b><s></s>Snare</b><i class="clip"></i></div>
+        <div class="pt-track t-hats"><b><s></s>Hats</b><i class="clip"></i></div>
+        <div class="pt-track t-bass"><b><s></s>Bass</b><i class="clip"></i></div>
+        <div class="pt-track t-gtr"><b><s></s>Gtr L</b><i class="clip"></i></div>
+        <div class="pt-track t-keys"><b><s></s>Keys</b><i class="clip"></i></div>
+        <div class="pt-track t-vox"><b><s></s>Lead Vox</b><i class="clip"></i></div>
+        <div class="pt-track t-bgv"><b><s></s>BGVs</b><i class="clip"></i></div>
+      </div>
+      <div class="pt-playhead"></div>
+    </div>
+  </div>
+
+  <div class="palette" id="palette">
+    <header class="chrome drag">
+      <div class="traffic" data-electron-hide>
+        <button class="tl close" id="closeBtn" aria-label="Close"></button>
+        <button class="tl min" id="minBtn" aria-label="Minimize"></button>
+        <button class="tl zoom" aria-hidden="true" tabindex="-1"></button>
+      </div>
+      <div class="brand">
+        <span class="avid-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16">
+            <path d="M12 2.2 3.4 21.2h4.2L12 10.1l4.4 11.1h4.2L12 2.2z" />
+            <path d="M12 8.4 7.6 19.4h2.8L12 14.2l1.6 5.2h2.8L12 8.4z" />
+          </svg>
+        </span>
+        <div class="brand-copy">
+          <strong>CURSOR MINI</strong>
+          <em id="hostLabel">PRO TOOLS</em>
+        </div>
+      </div>
+      <button class="icon-key" id="collapseBtn" aria-label="Collapse">▾</button>
+    </header>
+
+    <div class="body" id="paletteBody">
+      <section class="lcd" aria-live="polite">
+        <div class="lcd-meta">
+          <span class="led" id="connLed" data-state="demo"></span>
+          <span id="connText">DEMO</span>
+          <span class="lcd-right" id="clock">00:00:00:00</span>
+        </div>
+        <div class="lcd-title" id="sessionName">Demo Session</div>
+        <div class="lcd-sub" id="sessionMeta">48 kHz · 24-bit · 120.00 BPM</div>
+      </section>
+
+      <section class="row host-row">
+        <div class="field">
+          <span class="label">Host</span>
+          <div class="host-chip" id="hostChip">
+            <span class="led" id="hostLed" data-state="on"></span>
+            <span id="hostApp">PRO TOOLS</span>
+          </div>
+        </div>
+        <button class="latch" id="attachBtn" aria-pressed="true">ATTACH</button>
+      </section>
+
+      <section class="row tempo-row">
+        <div class="field grow">
+          <span class="label">Tempo</span>
+          <div class="stepper">
+            <button class="icon-key" id="tempoDown" aria-label="Tempo down">–</button>
+            <input id="tempo" type="number" min="40" max="240" step="1" value="120" />
+            <button class="icon-key" id="tempoUp" aria-label="Tempo up">+</button>
+            <span class="unit">BPM</span>
+          </div>
+        </div>
+        <div class="field">
+          <span class="label">Length</span>
+          <div class="readout" id="formLength">3:20 · 100 bars</div>
+        </div>
+      </section>
+
+      <section>
+        <div class="label">Automations</div>
+        <div class="key-grid" id="autoGrid"></div>
+      </section>
+
+      <section>
+        <div class="label">Locate</div>
+        <div class="locate-grid" id="locateGrid"></div>
+      </section>
+
+      <section class="scribble-wrap">
+        <div class="scribble" id="scribble">
+          <div class="scribble-kicker">READY</div>
+          <div class="scribble-main">Select a big-picture move</div>
+          <div class="scribble-sub">Then press Execute</div>
+        </div>
+        <button class="execute" id="executeBtn" disabled>EXECUTE</button>
+      </section>
+
+      <footer class="foot">
+        <button class="latch on" id="aotBtn" aria-pressed="true">ON TOP</button>
+        <button class="latch" id="previewHostBtn" data-electron-hide aria-pressed="true">PT HOST</button>
+        <span class="foot-note" id="footNote">Avid satellite · local PTSL</span>
+      </footer>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "cursor-mini",
+  "productName": "Cursor Mini",
+  "version": "0.1.0",
+  "description": "Floating Avid-style satellite for big-picture Pro Tools automations.",
+  "main": "electron/main.js",
+  "author": "Max Ater",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "ui": "python3 -m http.server 4173 --directory ui"
+  },
+  "devDependencies": {
+    "electron": "^36.9.5"
+  }
+}
