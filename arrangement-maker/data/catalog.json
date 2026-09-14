@@ -1,0 +1,4306 @@
+{
+  "meta": {
+    "neverSuggestKey": true,
+    "domain": "modern pop arrangement",
+    "rule": "Encode only patterns cited in SOURCES.md. Never generate or suggest song key."
+  },
+  "styles": [
+    {
+      "id": "dance-disco-pop",
+      "name": "Dance / disco-pop",
+      "eraLabel": "2019\u20132020s nu-disco / dance-pop",
+      "eras": [
+        "2010s",
+        "2020s"
+      ],
+      "weight": 14,
+      "bpm": {
+        "min": 118,
+        "max": 124,
+        "prefer": [
+          120,
+          124
+        ],
+        "feel": "four-on-the-floor",
+        "sourceIds": [
+          "S07",
+          "S08",
+          "S18"
+        ]
+      },
+      "requiredRoles": [
+        "drums",
+        "bass",
+        "lead"
+      ],
+      "densityBudget": 10,
+      "summary": "Nu-disco dance-pop around a classic disco pulse, as in Dua Lipa\u2019s Don\u2019t Start Now at 124 BPM in 4/4 with four-on-the-floor kick, funk bass, claps, and disco-adjacent colors.",
+      "sourceIds": [
+        "S07",
+        "S08",
+        "S18"
+      ]
+    },
+    {
+      "id": "midtempo-pop",
+      "name": "Midtempo pop",
+      "eraLabel": "2010s\u20132020s radio pop",
+      "eras": [
+        "2010s",
+        "2020s"
+      ],
+      "weight": 16,
+      "bpm": {
+        "min": 90,
+        "max": 110,
+        "prefer": [
+          96,
+          104
+        ],
+        "feel": "straight-8",
+        "sourceIds": [
+          "S09",
+          "S10"
+        ]
+      },
+      "requiredRoles": [
+        "drums",
+        "bass",
+        "harmony"
+      ],
+      "densityBudget": 9,
+      "summary": "Clustered around recent Hot 100 midtempos: HSD\u2019s 2022 mid-year top-10 average was 99 BPM, with more than half of those hits over 100 BPM.",
+      "sourceIds": [
+        "S09",
+        "S10"
+      ]
+    },
+    {
+      "id": "pop-ballad",
+      "name": "Pop ballad",
+      "eraLabel": "Slow chart ballad",
+      "eras": [
+        "2010s",
+        "2020s"
+      ],
+      "weight": 8,
+      "bpm": {
+        "min": 53,
+        "max": 80,
+        "prefer": [
+          60,
+          72
+        ],
+        "feel": "slow pulse",
+        "sourceIds": [
+          "S03",
+          "S14"
+        ]
+      },
+      "requiredRoles": [
+        "harmony",
+        "lead"
+      ],
+      "densityBudget": 7,
+      "summary": "Slow #1 and staying-power ballads on recent charts include 69 BPM (Luther) and 53 BPM (2025 staying-power highlight), well below dance-pop tempo.",
+      "sourceIds": [
+        "S03",
+        "S14"
+      ]
+    },
+    {
+      "id": "trap-pop",
+      "name": "Trap-influenced pop",
+      "eraLabel": "2010s\u20132020s trap-pop",
+      "eras": [
+        "2010s",
+        "2020s"
+      ],
+      "weight": 13,
+      "bpm": {
+        "min": 68,
+        "max": 90,
+        "prefer": [
+          70,
+          80
+        ],
+        "feel": "half-time",
+        "dawDoubleTime": true,
+        "sourceIds": [
+          "S19",
+          "S20",
+          "S21"
+        ]
+      },
+      "requiredRoles": [
+        "drums",
+        "bass",
+        "lead"
+      ],
+      "densityBudget": 8,
+      "summary": "Trap-pop often feels 70\u201390 BPM while DAWs run double-time (~140\u2013180). 808 decay-bass, snare/clap on beat 3, and rolled hats are the attested core.",
+      "sourceIds": [
+        "S19",
+        "S20",
+        "S21",
+        "S22"
+      ]
+    },
+    {
+      "id": "synth-pop-revival",
+      "name": "Synth-pop revival",
+      "eraLabel": "2010s\u20132020s synth-pop / 80s revival",
+      "eras": [
+        "2010s",
+        "2020s",
+        "1980s"
+      ],
+      "weight": 9,
+      "bpm": {
+        "min": 110,
+        "max": 125,
+        "prefer": [
+          116,
+          124
+        ],
+        "feel": "dance-leaning",
+        "sourceIds": [
+          "S07",
+          "S08",
+          "S11"
+        ]
+      },
+      "requiredRoles": [
+        "drums",
+        "bass",
+        "pad"
+      ],
+      "densityBudget": 9,
+      "summary": "Chart dance-pop that channels synth-pop and 1980s/Italo/French-house colors, as documented on Don\u2019t Start Now and in HSD\u2019s 80s-in-the-20s influence notes.",
+      "sourceIds": [
+        "S07",
+        "S08",
+        "S11"
+      ]
+    },
+    {
+      "id": "acoustic-folk-pop",
+      "name": "Acoustic / folk-pop",
+      "eraLabel": "2010s\u20132020s acoustic-leaning pop",
+      "eras": [
+        "2010s",
+        "2020s"
+      ],
+      "weight": 8,
+      "bpm": {
+        "min": 80,
+        "max": 110,
+        "prefer": [
+          84,
+          100
+        ],
+        "feel": "song-led",
+        "sourceIds": [
+          "S09",
+          "S12",
+          "S13"
+        ]
+      },
+      "requiredRoles": [
+        "harmony",
+        "drums"
+      ],
+      "densityBudget": 8,
+      "summary": "Acoustic drums rose to 42% of 2025 Hot 100 top 10s. Acoustic guitar on 2024 #1s was documented in country-influenced hits; folk is an attested 2024 country-pop influence.",
+      "sourceIds": [
+        "S12",
+        "S13",
+        "S09"
+      ]
+    },
+    {
+      "id": "rnb-soul-pop",
+      "name": "R&B / soul-pop",
+      "eraLabel": "2020s R&B-soul with pop",
+      "eras": [
+        "2010s",
+        "2020s"
+      ],
+      "weight": 10,
+      "bpm": {
+        "min": 60,
+        "max": 100,
+        "prefer": [
+          66,
+          84
+        ],
+        "feel": "pocket",
+        "sourceIds": [
+          "S03",
+          "S14"
+        ]
+      },
+      "requiredRoles": [
+        "drums",
+        "bass",
+        "harmony"
+      ],
+      "densityBudget": 9,
+      "summary": "2025 #1 Luther (R&B/Soul + pop/trap) used synth bass, electronic drums, acoustic guitar, electric piano, and strings at 69 BPM in I\u2013A\u2013PC\u2013B\u2013A\u2013PC\u2013B\u2013C\u2013O form.",
+      "sourceIds": [
+        "S03",
+        "S14"
+      ]
+    },
+    {
+      "id": "country-pop",
+      "name": "Country-pop",
+      "eraLabel": "2020s country \u00d7 pop crossover",
+      "eras": [
+        "2020s"
+      ],
+      "weight": 8,
+      "bpm": {
+        "min": 76,
+        "max": 108,
+        "prefer": [
+          80,
+          96
+        ],
+        "feel": "straight",
+        "sourceIds": [
+          "S11",
+          "S13"
+        ]
+      },
+      "requiredRoles": [
+        "drums",
+        "harmony",
+        "bass"
+      ],
+      "densityBudget": 9,
+      "summary": "2024 Hot 100 #1 research recorded country as a leading primary genre, with acoustic/electric guitars, acoustic drums, banjo, and fiddle on a documented #1.",
+      "sourceIds": [
+        "S11",
+        "S13"
+      ]
+    },
+    {
+      "id": "edm-pop",
+      "name": "EDM-pop",
+      "eraLabel": "2010s\u20132020s Top-40 EDM",
+      "eras": [
+        "2010s",
+        "2020s"
+      ],
+      "weight": 9,
+      "bpm": {
+        "min": 120,
+        "max": 130,
+        "prefer": [
+          124,
+          128
+        ],
+        "feel": "four-on-the-floor",
+        "sourceIds": [
+          "S16",
+          "S17"
+        ]
+      },
+      "requiredRoles": [
+        "drums",
+        "bass",
+        "fx"
+      ],
+      "densityBudget": 9,
+      "summary": "Top-40 EDM uses riser (pitch rise, low-cut, snare build, kick withheld) then drop (kick returns). Later drops often add effected vocal samples.",
+      "sourceIds": [
+        "S16",
+        "S17"
+      ]
+    },
+    {
+      "id": "dark-minimal-pop",
+      "name": "Dark minimal pop",
+      "eraLabel": "late-2010s sparse pop",
+      "eras": [
+        "2010s",
+        "2020s"
+      ],
+      "weight": 7,
+      "bpm": {
+        "min": 64,
+        "max": 90,
+        "prefer": [
+          66,
+          78
+        ],
+        "feel": "half-time or sparse",
+        "sourceIds": [
+          "S22",
+          "S19"
+        ]
+      },
+      "requiredRoles": [
+        "drums",
+        "bass",
+        "lead"
+      ],
+      "densityBudget": 6,
+      "summary": "Sparse trap-pop and minimal hits (e.g. 7 rings intro with a single reverbed synth; bad guy accompaniment-pulls and synth post-chorus) keep density low and use subtraction for impact.",
+      "sourceIds": [
+        "S19",
+        "S22"
+      ]
+    }
+  ],
+  "timeSignatures": [
+    {
+      "id": "4-4",
+      "label": "4/4",
+      "beats": 4,
+      "weight": 96,
+      "styles": [
+        "any"
+      ],
+      "detail": "About 96% of Billboard #1s (2000\u20132018) and 96.57% of a 933-song 21st-century top-seller sample are in 4/4.",
+      "sourceIds": [
+        "S23",
+        "S24"
+      ]
+    },
+    {
+      "id": "6-8",
+      "label": "6/8",
+      "beats": 6,
+      "weight": 2.5,
+      "styles": [
+        "pop-ballad",
+        "rnb-soul-pop",
+        "acoustic-folk-pop"
+      ],
+      "detail": "When 21st-century best-sellers leave 4/4, they are most often in 6/8 or 12/8.",
+      "sourceIds": [
+        "S24"
+      ]
+    },
+    {
+      "id": "3-4",
+      "label": "3/4",
+      "beats": 3,
+      "weight": 1,
+      "styles": [
+        "pop-ballad",
+        "acoustic-folk-pop"
+      ],
+      "detail": "3/4 appears among the small non-4/4 remainder of modern chart-pop; it is rare on #1s.",
+      "sourceIds": [
+        "S24",
+        "S25"
+      ]
+    }
+  ],
+  "sectionLengths": [
+    {
+      "section": "intro",
+      "bars": [
+        4,
+        8
+      ],
+      "sourceIds": [
+        "S26",
+        "S27",
+        "S15"
+      ]
+    },
+    {
+      "section": "verse",
+      "bars": [
+        8,
+        16
+      ],
+      "sourceIds": [
+        "S26",
+        "S27",
+        "S28"
+      ]
+    },
+    {
+      "section": "pre-chorus",
+      "bars": [
+        4,
+        8
+      ],
+      "sourceIds": [
+        "S26",
+        "S27"
+      ]
+    },
+    {
+      "section": "chorus",
+      "bars": [
+        8,
+        16
+      ],
+      "sourceIds": [
+        "S26",
+        "S27",
+        "S28"
+      ]
+    },
+    {
+      "section": "post-chorus",
+      "bars": [
+        4,
+        8
+      ],
+      "sourceIds": [
+        "S26",
+        "S05"
+      ]
+    },
+    {
+      "section": "drop",
+      "bars": [
+        8,
+        16
+      ],
+      "sourceIds": [
+        "S16",
+        "S17"
+      ]
+    },
+    {
+      "section": "bridge",
+      "bars": [
+        8
+      ],
+      "sourceIds": [
+        "S27",
+        "S28"
+      ]
+    },
+    {
+      "section": "vocal-break",
+      "bars": [
+        4,
+        8
+      ],
+      "sourceIds": [
+        "S13"
+      ]
+    },
+    {
+      "section": "instrumental-break",
+      "bars": [
+        4,
+        8
+      ],
+      "sourceIds": [
+        "S14"
+      ]
+    },
+    {
+      "section": "outro",
+      "bars": [
+        4,
+        8
+      ],
+      "sourceIds": [
+        "S26",
+        "S27"
+      ]
+    },
+    {
+      "section": "default",
+      "bars": [
+        8
+      ],
+      "sourceIds": [
+        "S26",
+        "S28"
+      ]
+    }
+  ],
+  "energyBySection": {
+    "intro": {
+      "start": 0.28,
+      "end": 0.34,
+      "function": "Establish groove or motif at lower density before core sections.",
+      "sourceIds": [
+        "S15",
+        "S29"
+      ]
+    },
+    "verse": {
+      "start": 0.34,
+      "end": 0.42,
+      "function": "Sparser, vocal-led initiation; texture often thinner than the chorus.",
+      "sourceIds": [
+        "S15",
+        "S17",
+        "S29"
+      ]
+    },
+    "pre-chorus": {
+      "start": 0.48,
+      "end": 0.66,
+      "function": "Build: rising density, rhythmic activity, or withheld bass before arrival.",
+      "sourceIds": [
+        "S01",
+        "S15",
+        "S17",
+        "S29"
+      ]
+    },
+    "chorus": {
+      "start": 0.78,
+      "end": 0.86,
+      "function": "Telos / hook arrival: fuller texture, wider vocal, restored low end unless anti-telos.",
+      "sourceIds": [
+        "S15",
+        "S17",
+        "S29"
+      ]
+    },
+    "post-chorus": {
+      "start": 0.82,
+      "end": 0.9,
+      "function": "Keep or raise sonic energy after the chorus and add a second hook.",
+      "sourceIds": [
+        "S05",
+        "S06",
+        "S12"
+      ]
+    },
+    "drop": {
+      "start": 0.9,
+      "end": 0.96,
+      "function": "Statistical climax: kick/bass return after riser; often the loudest section in EDM-pop.",
+      "sourceIds": [
+        "S16",
+        "S17"
+      ]
+    },
+    "bridge": {
+      "start": 0.4,
+      "end": 0.52,
+      "function": "Departure / contrast; often thinner or newly colored before the last lift.",
+      "sourceIds": [
+        "S29",
+        "S15"
+      ]
+    },
+    "vocal-break": {
+      "start": 0.36,
+      "end": 0.44,
+      "function": "Documented country-pop relief module between chorus cycles.",
+      "sourceIds": [
+        "S13"
+      ]
+    },
+    "instrumental-break": {
+      "start": 0.38,
+      "end": 0.5,
+      "function": "Auxiliary relief or intensification between chorus statements.",
+      "sourceIds": [
+        "S14",
+        "S29"
+      ]
+    },
+    "outro": {
+      "start": 0.46,
+      "end": 0.3,
+      "function": "Closing rhetoric: repeat, thin-out, late intensification, or fade.",
+      "sourceIds": [
+        "S29"
+      ]
+    }
+  },
+  "structures": [
+    {
+      "id": "i-v-pc-c-v-pc-c-b-o",
+      "name": "Verse\u2013pre\u2013chorus with bridge",
+      "weight": 18,
+      "styles": [
+        "any"
+      ],
+      "needsFx": false,
+      "sourceIds": [
+        "S03"
+      ],
+      "sections": [
+        {
+          "type": "intro",
+          "label": "Intro"
+        },
+        {
+          "type": "verse",
+          "label": "Verse 1"
+        },
+        {
+          "type": "pre-chorus",
+          "label": "Pre 1"
+        },
+        {
+          "type": "chorus",
+          "label": "Chorus 1"
+        },
+        {
+          "type": "verse",
+          "label": "Verse 2"
+        },
+        {
+          "type": "pre-chorus",
+          "label": "Pre 2"
+        },
+        {
+          "type": "chorus",
+          "label": "Chorus 2"
+        },
+        {
+          "type": "bridge",
+          "label": "Bridge"
+        },
+        {
+          "type": "outro",
+          "label": "Outro"
+        }
+      ]
+    },
+    {
+      "id": "ababcb",
+      "name": "A\u2013B\u2013A\u2013B\u2013C\u2013B",
+      "weight": 14,
+      "styles": [
+        "midtempo-pop",
+        "acoustic-folk-pop",
+        "country-pop",
+        "synth-pop-revival",
+        "dance-disco-pop"
+      ],
+      "needsFx": false,
+      "sourceIds": [
+        "S04"
+      ],
+      "sections": [
+        {
+          "type": "verse",
+          "label": "Verse 1"
+        },
+        {
+          "type": "chorus",
+          "label": "Chorus 1"
+        },
+        {
+          "type": "verse",
+          "label": "Verse 2"
+        },
+        {
+          "type": "chorus",
+          "label": "Chorus 2"
+        },
+        {
+          "type": "bridge",
+          "label": "Bridge"
+        },
+        {
+          "type": "chorus",
+          "label": "Chorus 3"
+        }
+      ]
+    },
+    {
+      "id": "vpc-postchorus",
+      "name": "Verse\u2013pre\u2013chorus + post-chorus",
+      "weight": 16,
+      "styles": [
+        "dance-disco-pop",
+        "midtempo-pop",
+        "synth-pop-revival",
+        "trap-pop",
+        "edm-pop",
+        "dark-minimal-pop"
+      ],
+      "needsFx": true,
+      "sourceIds": [
+        "S03",
+        "S05",
+        "S12"
+      ],
+      "sections": [
+        {
+          "type": "intro",
+          "label": "Intro"
+        },
+        {
+          "type": "verse",
+          "label": "Verse 1"
+        },
+        {
+          "type": "pre-chorus",
+          "label": "Pre 1"
+        },
+        {
+          "type": "chorus",
+          "label": "Chorus 1"
+        },
+        {
+          "type": "post-chorus",
+          "label": "Post 1"
+        },
+        {
+          "type": "verse",
+          "label": "Verse 2"
+        },
+        {
+          "type": "pre-chorus",
+          "label": "Pre 2"
+        },
+        {
+          "type": "chorus",
+          "label": "Chorus 2"
+        },
+        {
+          "type": "post-chorus",
+          "label": "Post 2"
+        },
+        {
+          "type": "bridge",
+          "label": "Bridge"
+        },
+        {
+          "type": "chorus",
+          "label": "Chorus 3"
+        }
+      ]
+    },
+    {
+      "id": "riser-popdrop",
+      "name": "Chorus into pop-drop",
+      "weight": 10,
+      "styles": [
+        "edm-pop",
+        "dance-disco-pop",
+        "synth-pop-revival"
+      ],
+      "needsFx": true,
+      "sourceIds": [
+        "S16",
+        "S17",
+        "S06"
+      ],
+      "sections": [
+        {
+          "type": "intro",
+          "label": "Intro"
+        },
+        {
+          "type": "verse",
+          "label": "Verse 1"
+        },
+        {
+          "type": "pre-chorus",
+          "label": "Pre / riser"
+        },
+        {
+          "type": "chorus",
+          "label": "Chorus"
+        },
+        {
+          "type": "drop",
+          "label": "Pop-drop"
+        },
+        {
+          "type": "verse",
+          "label": "Verse 2"
+        },
+        {
+          "type": "pre-chorus",
+          "label": "Pre / riser 2"
+        },
+        {
+          "type": "chorus",
+          "label": "Chorus 2"
+        },
+        {
+          "type": "drop",
+          "label": "Drop 2"
+        },
+        {
+          "type": "outro",
+          "label": "Outro"
+        }
+      ]
+    },
+    {
+      "id": "verse-chorus-plain",
+      "name": "Verse\u2013chorus (no pre-chorus)",
+      "weight": 8,
+      "styles": [
+        "midtempo-pop",
+        "acoustic-folk-pop",
+        "country-pop",
+        "pop-ballad"
+      ],
+      "needsFx": false,
+      "sourceIds": [
+        "S01",
+        "S02"
+      ],
+      "sections": [
+        {
+          "type": "intro",
+          "label": "Intro"
+        },
+        {
+          "type": "verse",
+          "label": "Verse 1"
+        },
+        {
+          "type": "chorus",
+          "label": "Chorus 1"
+        },
+        {
+          "type": "verse",
+          "label": "Verse 2"
+        },
+        {
+          "type": "chorus",
+          "label": "Chorus 2"
+        },
+        {
+          "type": "bridge",
+          "label": "Bridge"
+        },
+        {
+          "type": "chorus",
+          "label": "Chorus 3"
+        }
+      ]
+    },
+    {
+      "id": "three-chorus-double-final",
+      "name": "Three choruses, doubled last",
+      "weight": 11,
+      "styles": [
+        "midtempo-pop",
+        "dance-disco-pop",
+        "synth-pop-revival",
+        "rnb-soul-pop"
+      ],
+      "needsFx": false,
+      "sourceIds": [
+        "S11",
+        "S27"
+      ],
+      "sections": [
+        {
+          "type": "intro",
+          "label": "Intro"
+        },
+        {
+          "type": "verse",
+          "label": "Verse 1"
+        },
+        {
+          "type": "pre-chorus",
+          "label": "Pre 1"
+        },
+        {
+          "type": "chorus",
+          "label": "Chorus 1"
+        },
+        {
+          "type": "verse",
+          "label": "Verse 2"
+        },
+        {
+          "type": "pre-chorus",
+          "label": "Pre 2"
+        },
+        {
+          "type": "chorus",
+          "label": "Chorus 2"
+        },
+        {
+          "type": "bridge",
+          "label": "Bridge"
+        },
+        {
+          "type": "chorus",
+          "label": "Final chorus"
+        },
+        {
+          "type": "chorus",
+          "label": "Double chorus"
+        }
+      ]
+    },
+    {
+      "id": "country-vocal-breaks",
+      "name": "Country-pop with vocal breaks",
+      "weight": 7,
+      "styles": [
+        "country-pop"
+      ],
+      "needsFx": false,
+      "sourceIds": [
+        "S13"
+      ],
+      "sections": [
+        {
+          "type": "intro",
+          "label": "Intro"
+        },
+        {
+          "type": "verse",
+          "label": "Verse 1"
+        },
+        {
+          "type": "pre-chorus",
+          "label": "Pre 1"
+        },
+        {
+          "type": "chorus",
+          "label": "Chorus 1"
+        },
+        {
+          "type": "vocal-break",
+          "label": "Vocal break"
+        },
+        {
+          "type": "verse",
+          "label": "Verse 2"
+        },
+        {
+          "type": "pre-chorus",
+          "label": "Pre 2"
+        },
+        {
+          "type": "chorus",
+          "label": "Chorus 2"
+        },
+        {
+          "type": "vocal-break",
+          "label": "Vocal break 2"
+        },
+        {
+          "type": "pre-chorus",
+          "label": "Pre 3"
+        },
+        {
+          "type": "chorus",
+          "label": "Chorus 3"
+        },
+        {
+          "type": "outro",
+          "label": "Outro"
+        }
+      ]
+    },
+    {
+      "id": "ballad-repeat-chorus",
+      "name": "Ballad verse\u2013chorus with instrumental break",
+      "weight": 6,
+      "styles": [
+        "pop-ballad",
+        "rnb-soul-pop"
+      ],
+      "needsFx": false,
+      "sourceIds": [
+        "S14"
+      ],
+      "sections": [
+        {
+          "type": "intro",
+          "label": "Intro"
+        },
+        {
+          "type": "verse",
+          "label": "Verse 1"
+        },
+        {
+          "type": "chorus",
+          "label": "Chorus 1"
+        },
+        {
+          "type": "verse",
+          "label": "Verse 2"
+        },
+        {
+          "type": "chorus",
+          "label": "Chorus 2"
+        },
+        {
+          "type": "instrumental-break",
+          "label": "Instr. break"
+        },
+        {
+          "type": "chorus",
+          "label": "Chorus 3"
+        }
+      ]
+    }
+  ],
+  "instruments": [
+    {
+      "id": "fotf-kick",
+      "name": "Four-on-the-floor kick",
+      "role": "drums",
+      "family": "kick",
+      "band": "low",
+      "density": "medium",
+      "styles": [
+        "dance-disco-pop",
+        "edm-pop",
+        "synth-pop-revival"
+      ],
+      "era": [
+        "2010s",
+        "2020s",
+        "1970s"
+      ],
+      "conflictsWith": [
+        "trap-snare-3"
+      ],
+      "detail": "Kick on every quarter, the house/disco floor that Don\u2019t Start Now and Top-40 EDM drops restore after a riser.",
+      "why": "Attested on nu-disco dance-pop and as the EDM drop\u2019s returning kick.",
+      "sourceIds": [
+        "S07",
+        "S08",
+        "S16"
+      ],
+      "weight": 8
+    },
+    {
+      "id": "acoustic-kick",
+      "name": "Acoustic kick",
+      "role": "drums",
+      "family": "kick",
+      "band": "low",
+      "density": "medium",
+      "styles": [
+        "midtempo-pop",
+        "acoustic-folk-pop",
+        "country-pop",
+        "pop-ballad",
+        "rnb-soul-pop"
+      ],
+      "detail": "Live-sounding kick as part of primarily acoustic drum kits, which reached 42% of 2025 Hot 100 top 10s.",
+      "why": "HSD documents a multi-year rise in acoustic-sounding drums across pop, country, R&B, and rock.",
+      "sourceIds": [
+        "S12",
+        "S13"
+      ],
+      "weight": 7,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "808-kick",
+      "name": "808 kick / decay bass",
+      "role": "bass",
+      "family": "808",
+      "band": "sub",
+      "density": "heavy",
+      "styles": [
+        "trap-pop",
+        "dark-minimal-pop",
+        "rnb-soul-pop"
+      ],
+      "era": [
+        "2010s",
+        "2020s"
+      ],
+      "conflictsWith": [
+        "synth-sub",
+        "sub-drop-return"
+      ],
+      "occupiesSub": true,
+      "roleLimit": 1,
+      "detail": "Long-decay 808 that can carry both kick and bass; TIDAL notes producers often tune the 808 and skip a separate bass synth.",
+      "why": "Defining trap low end from hardware 808 decay to Drake-era pitched booms.",
+      "sourceIds": [
+        "S20",
+        "S21"
+      ],
+      "weight": 8
+    },
+    {
+      "id": "synth-sub",
+      "name": "Sine / synth sub",
+      "role": "bass",
+      "family": "sub",
+      "band": "sub",
+      "density": "heavy",
+      "styles": [
+        "dance-disco-pop",
+        "edm-pop",
+        "synth-pop-revival",
+        "midtempo-pop"
+      ],
+      "conflictsWith": [
+        "808-kick"
+      ],
+      "occupiesSub": true,
+      "roleLimit": 1,
+      "detail": "Separate sub layer under a mid bass, as in Don\u2019t Start Now\u2019s layered bass/sub approach.",
+      "why": "SOS Inside Track describes layered bass, sub-bass, and synths as distinct unified parts.",
+      "sourceIds": [
+        "S18"
+      ],
+      "weight": 6,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "funk-electric-bass",
+      "name": "Funk electric bass",
+      "role": "bass",
+      "family": "electric-bass",
+      "band": "low",
+      "density": "medium",
+      "styles": [
+        "dance-disco-pop",
+        "synth-pop-revival",
+        "rnb-soul-pop"
+      ],
+      "detail": "Percolating funk bassline that locks to the four-on-the-floor, inspired by Bee Gees / Daft Punk references on Don\u2019t Start Now.",
+      "why": "Wikipedia and Robin Frederick both specify the funk bass as a primary hook.",
+      "sourceIds": [
+        "S07",
+        "S08"
+      ],
+      "weight": 7,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "electric-bass",
+      "name": "Electric bass guitar",
+      "role": "bass",
+      "family": "electric-bass",
+      "band": "low",
+      "density": "medium",
+      "styles": [
+        "midtempo-pop",
+        "country-pop",
+        "pop-ballad",
+        "rnb-soul-pop",
+        "acoustic-folk-pop"
+      ],
+      "detail": "Played electric bass; 38% of 2024 #1s featured electric bass versus 56% synth bass.",
+      "why": "HSD 2024 #1 instrument census.",
+      "sourceIds": [
+        "S13",
+        "S14"
+      ],
+      "weight": 6,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "synth-bass",
+      "name": "Synth bass (mid)",
+      "role": "bass",
+      "family": "synth-bass",
+      "band": "low",
+      "density": "medium",
+      "styles": [
+        "dance-disco-pop",
+        "midtempo-pop",
+        "synth-pop-revival",
+        "edm-pop",
+        "rnb-soul-pop",
+        "trap-pop"
+      ],
+      "detail": "Mid synth bass that can sit above a sub or 808. Synth bass outweighed electric bass 56% to 38% among 2024 #1s.",
+      "why": "HSD 2024 bass split; Luther lists synth bass as prominent.",
+      "sourceIds": [
+        "S03",
+        "S13"
+      ],
+      "weight": 8,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "acoustic-bass",
+      "name": "Acoustic bass",
+      "role": "bass",
+      "family": "acoustic-bass",
+      "band": "low",
+      "density": "light",
+      "styles": [
+        "country-pop",
+        "acoustic-folk-pop"
+      ],
+      "detail": "Acoustic bass paired with synth bass on a documented 2024 country #1.",
+      "why": "HSD 2024 #1 highlight lists bass (acoustic & synth).",
+      "sourceIds": [
+        "S13"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "backbeat-snare",
+      "name": "Snare on 2 and 4",
+      "role": "drums",
+      "family": "snare",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "midtempo-pop",
+        "dance-disco-pop",
+        "synth-pop-revival",
+        "acoustic-folk-pop",
+        "country-pop",
+        "pop-ballad",
+        "rnb-soul-pop"
+      ],
+      "detail": "Common-time backbeat snare that defines 4/4 chart-pop feel.",
+      "why": "4/4 common-time dominance plus standard backbeat practice in pop/rock form texts.",
+      "sourceIds": [
+        "S23",
+        "S24",
+        "S29"
+      ],
+      "weight": 8,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "trap-snare-3",
+      "name": "Snare / clap on beat 3",
+      "role": "drums",
+      "family": "snare",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "trap-pop",
+        "dark-minimal-pop"
+      ],
+      "conflictsWith": [
+        "fotf-kick"
+      ],
+      "detail": "Half-time trap backbeat: snare or clap on 3 while hats run at the double-time grid.",
+      "why": "Trap rhythm sources describe snare/clap on beat 3 as the genre separator from 2-and-4 pop.",
+      "sourceIds": [
+        "S20",
+        "S21"
+      ],
+      "weight": 7,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "handclaps",
+      "name": "Handclaps",
+      "role": "drums",
+      "family": "clap",
+      "band": "mid",
+      "density": "light",
+      "styles": [
+        "dance-disco-pop",
+        "synth-pop-revival",
+        "midtempo-pop",
+        "country-pop",
+        "edm-pop"
+      ],
+      "detail": "Handclaps as a disco/pop backbeat layer; listed among Don\u2019t Start Now production elements.",
+      "why": "Wikipedia production list for Don\u2019t Start Now.",
+      "sourceIds": [
+        "S08"
+      ],
+      "weight": 6,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "snaps",
+      "name": "Finger snaps",
+      "role": "drums",
+      "family": "clap",
+      "band": "mid",
+      "density": "light",
+      "styles": [
+        "pop-ballad",
+        "rnb-soul-pop",
+        "midtempo-pop",
+        "dark-minimal-pop"
+      ],
+      "detail": "Snaps as a featured percussion color on a 2025 staying-power highlight mix.",
+      "why": "HSD 2025 staying-power prominent instruments include snaps.",
+      "sourceIds": [
+        "S14"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "trap-hats",
+      "name": "Trap hi-hat rolls",
+      "role": "drums",
+      "family": "hats",
+      "band": "high",
+      "density": "medium",
+      "styles": [
+        "trap-pop",
+        "dark-minimal-pop",
+        "rnb-soul-pop"
+      ],
+      "detail": "8ths, 16ths, triplets, and 32nd zipper rolls. Joe Bennett notes 32nd-note hats on 7 rings.",
+      "why": "Attested trap-pop hat language; Rick Ross B.M.F. cited as a hat-roll tutorial at 140 BPM.",
+      "sourceIds": [
+        "S19",
+        "S20"
+      ],
+      "weight": 7,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "acoustic-hats",
+      "name": "Acoustic hi-hats",
+      "role": "drums",
+      "family": "hats",
+      "band": "high",
+      "density": "light",
+      "styles": [
+        "midtempo-pop",
+        "acoustic-folk-pop",
+        "country-pop",
+        "pop-ballad",
+        "rnb-soul-pop"
+      ],
+      "detail": "Acoustic kit hats as part of the primarily acoustic drum rise on recent charts.",
+      "why": "HSD acoustic-drum share, 2024\u20132025.",
+      "sourceIds": [
+        "S12",
+        "S13"
+      ],
+      "weight": 5,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "electronic-kit",
+      "name": "Electronic drum / perc kit",
+      "role": "drums",
+      "family": "kit",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "trap-pop",
+        "edm-pop",
+        "synth-pop-revival",
+        "dance-disco-pop",
+        "rnb-soul-pop",
+        "dark-minimal-pop"
+      ],
+      "detail": "Primarily electronic drums/percussion; 44% of 2024 #1s vs 38% primarily acoustic.",
+      "why": "HSD 2024 #1 drum split; Luther uses primarily electronic drums.",
+      "sourceIds": [
+        "S03",
+        "S13"
+      ],
+      "weight": 7,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "acoustic-kit",
+      "name": "Acoustic drum kit",
+      "role": "drums",
+      "family": "kit",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "midtempo-pop",
+        "acoustic-folk-pop",
+        "country-pop",
+        "pop-ballad",
+        "rnb-soul-pop"
+      ],
+      "detail": "Full acoustic-sounding kit. 2025 top 10s favored acoustic drums (42%) over electronic for the first time since 2014.",
+      "why": "HSD 2025 year-in-review instrument trend.",
+      "sourceIds": [
+        "S12"
+      ],
+      "weight": 7,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "cowbell",
+      "name": "Cowbell",
+      "role": "drums",
+      "family": "perc",
+      "band": "high",
+      "density": "light",
+      "styles": [
+        "dance-disco-pop",
+        "synth-pop-revival"
+      ],
+      "detail": "Disco cowbell color called out in Don\u2019t Start Now writeups.",
+      "why": "Wikipedia and Robin Frederick note cowbells on Don\u2019t Start Now.",
+      "sourceIds": [
+        "S07",
+        "S08"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "crowd-fx",
+      "name": "Crowd / room noise",
+      "role": "fx",
+      "family": "atmosphere",
+      "band": "mid",
+      "density": "light",
+      "styles": [
+        "dance-disco-pop",
+        "synth-pop-revival"
+      ],
+      "detail": "Crowd-noise sample as a disco-club signifier.",
+      "why": "Wikipedia lists crowd noise among Don\u2019t Start Now elements.",
+      "sourceIds": [
+        "S08"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "snare-build",
+      "name": "Snare-roll build",
+      "role": "fx",
+      "family": "riser",
+      "band": "high",
+      "density": "medium",
+      "styles": [
+        "edm-pop",
+        "dance-disco-pop",
+        "synth-pop-revival"
+      ],
+      "detail": "Rhythmic crescendo on snare from quarters to 16ths to a blurred roll into the drop.",
+      "why": "Osborn\u2019s formal function of the EDM build.",
+      "sourceIds": [
+        "S16"
+      ],
+      "weight": 5,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "white-noise-riser",
+      "name": "White-noise / pitch riser",
+      "role": "fx",
+      "family": "riser",
+      "band": "high",
+      "density": "medium",
+      "styles": [
+        "edm-pop",
+        "dance-disco-pop",
+        "synth-pop-revival"
+      ],
+      "detail": "Rising-pitch riser, often with progressive low-cut, used while the four-on-the-floor kick is withheld.",
+      "why": "Osborn: riser pitch + low-frequency cut + absent kick.",
+      "sourceIds": [
+        "S16"
+      ],
+      "weight": 6,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "downlifter",
+      "name": "Downlifter / reverse cymbal",
+      "role": "fx",
+      "family": "transition",
+      "band": "high",
+      "density": "light",
+      "styles": [
+        "edm-pop",
+        "dance-disco-pop",
+        "midtempo-pop",
+        "synth-pop-revival"
+      ],
+      "detail": "Reverse-cymbal or downlifter as a section-boundary accent before a new module.",
+      "why": "Section boundaries in pop are commonly marked by drum fills and sudden texture change (Open Music Theory).",
+      "sourceIds": [
+        "S29",
+        "S16"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "impact-hit",
+      "name": "Impact / crash hit",
+      "role": "fx",
+      "family": "transition",
+      "band": "mid",
+      "density": "heavy",
+      "styles": [
+        "edm-pop",
+        "dance-disco-pop",
+        "synth-pop-revival"
+      ],
+      "detail": "Crash or impact at the drop/chorus downbeat after a withheld bar.",
+      "why": "UD pop-drop thesis: backing cuts out just before the drop, then the robust chorus/drop hits.",
+      "sourceIds": [
+        "S15",
+        "S16"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "laser-sfx",
+      "name": "Laser / synth burst FX",
+      "role": "fx",
+      "family": "earcandy",
+      "band": "high",
+      "density": "light",
+      "styles": [
+        "dance-disco-pop",
+        "synth-pop-revival"
+      ],
+      "detail": "Laser-weapon SFX and synth bursts listed in Don\u2019t Start Now\u2019s production.",
+      "why": "Wikipedia production inventory.",
+      "sourceIds": [
+        "S08"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "lead-vocal",
+      "name": "Lead vocal",
+      "role": "lead",
+      "family": "vocal",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "any"
+      ],
+      "roleLimit": 1,
+      "detail": "Sung (or sung/rap hybrid) lead as the primary hook carrier in modern chart pop.",
+      "why": "HSD deconstructions treat lead vocal delivery as a tracked compositional category on every hit.",
+      "sourceIds": [
+        "S03",
+        "S13",
+        "S30"
+      ],
+      "weight": 10,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "vocal-doubles",
+      "name": "Lead vocal doubles",
+      "role": "lead",
+      "family": "vocal",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "any"
+      ],
+      "detail": "Doubled lead for thickness and radio solidity; chorus often adds stacks on top.",
+      "why": "Open Music Theory notes added background vocals as a chorus-energy marker; SOS details mono-to-stereo vocal chains.",
+      "sourceIds": [
+        "S29",
+        "S18"
+      ],
+      "weight": 7,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "bgv-stacks",
+      "name": "Stacked backing vocals",
+      "role": "pad",
+      "family": "vocal",
+      "band": "mid",
+      "density": "heavy",
+      "styles": [
+        "midtempo-pop",
+        "dance-disco-pop",
+        "pop-ballad",
+        "synth-pop-revival",
+        "rnb-soul-pop",
+        "country-pop"
+      ],
+      "detail": "Wider stacks at chorus; Open Music Theory cites added background vocals as a chorus-delineating, energy-raising feature.",
+      "why": "Chorus function + late-song intensification.",
+      "sourceIds": [
+        "S29"
+      ],
+      "weight": 7,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "vocal-chops",
+      "name": "Effected vocal chops",
+      "role": "lead",
+      "family": "vocal-chop",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "edm-pop",
+        "trap-pop",
+        "synth-pop-revival",
+        "dark-minimal-pop"
+      ],
+      "detail": "Highly effected vocal samples on newer Top-40 EDM drops (2016\u2013) mixing pop hooks with dance climax.",
+      "why": "Osborn on post-2016 Top-40 EDM drops.",
+      "sourceIds": [
+        "S16"
+      ],
+      "weight": 5,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "hummed-vocal",
+      "name": "Hummed / syllabic vocal hook",
+      "role": "lead",
+      "family": "vocal",
+      "band": "mid",
+      "density": "light",
+      "styles": [
+        "rnb-soul-pop",
+        "trap-pop",
+        "dark-minimal-pop"
+      ],
+      "detail": "Hummed or syllabic vocal as a hook layer; Luther\u2019s lead delivery is listed as rapped, sung, and hummed.",
+      "why": "HSD 2025 #1 highlight for Luther.",
+      "sourceIds": [
+        "S03"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "acoustic-guitar",
+      "name": "Acoustic guitar",
+      "role": "harmony",
+      "family": "guitar",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "acoustic-folk-pop",
+        "country-pop",
+        "rnb-soul-pop",
+        "pop-ballad",
+        "midtempo-pop"
+      ],
+      "detail": "Strummed or picked acoustic guitar. On 2024 #1s, acoustic guitar appeared in 25% of songs and, in that sample, only on country-influenced hits; Luther (2025) also lists it.",
+      "why": "HSD 2024 guitar split + Luther instrument list.",
+      "sourceIds": [
+        "S03",
+        "S13"
+      ],
+      "weight": 6,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "electric-guitar",
+      "name": "Electric guitar",
+      "role": "harmony",
+      "family": "guitar",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "country-pop",
+        "midtempo-pop",
+        "acoustic-folk-pop",
+        "pop-ballad",
+        "rnb-soul-pop",
+        "dance-disco-pop"
+      ],
+      "detail": "Electric guitar spanned country, hip-hop/rap, pop, and R&B among 2024 #1s (31%).",
+      "why": "HSD 2024 #1 guitar census.",
+      "sourceIds": [
+        "S13",
+        "S14"
+      ],
+      "weight": 6,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "muted-disco-guitar",
+      "name": "Muted disco guitar",
+      "role": "harmony",
+      "family": "guitar",
+      "band": "high",
+      "density": "light",
+      "styles": [
+        "dance-disco-pop",
+        "synth-pop-revival"
+      ],
+      "detail": "Nile-Rodgers-descended muted guitar language sitting with four-on-the-floor and funk bass in nu-disco pop.",
+      "why": "Don\u2019t Start Now is documented as nu-disco with funk-bass/disco tropes; disco guitar is part of that attested palette.",
+      "sourceIds": [
+        "S07",
+        "S08"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "banjo",
+      "name": "Banjo",
+      "role": "harmony",
+      "family": "country-string",
+      "band": "high",
+      "density": "medium",
+      "styles": [
+        "country-pop"
+      ],
+      "detail": "Banjo as a prominent instrument on a documented 2024 country #1.",
+      "why": "HSD 2024 #1 highlight instrument list.",
+      "sourceIds": [
+        "S13"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "fiddle",
+      "name": "Fiddle",
+      "role": "lead",
+      "family": "country-string",
+      "band": "high",
+      "density": "medium",
+      "styles": [
+        "country-pop"
+      ],
+      "detail": "Fiddle hook or fill color on a documented 2024 country #1.",
+      "why": "HSD 2024 #1 highlight instrument list.",
+      "sourceIds": [
+        "S13"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "acoustic-piano",
+      "name": "Acoustic piano",
+      "role": "harmony",
+      "family": "piano",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "pop-ballad",
+        "midtempo-pop",
+        "acoustic-folk-pop",
+        "country-pop"
+      ],
+      "detail": "Acoustic piano remains in the pop toolkit but HSD recorded it at a decade-low prominence among 2024 #1s.",
+      "why": "Use when the lane is ballad or song-led; do not treat as a 2024 #1 default.",
+      "sourceIds": [
+        "S13"
+      ],
+      "weight": 5,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "electric-piano",
+      "name": "Electric piano",
+      "role": "harmony",
+      "family": "piano",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "rnb-soul-pop",
+        "pop-ballad",
+        "midtempo-pop",
+        "dark-minimal-pop"
+      ],
+      "detail": "Electric piano listed on Luther (2025 #1) alongside synth bass and strings.",
+      "why": "HSD 2025 #1 instrument list.",
+      "sourceIds": [
+        "S03"
+      ],
+      "weight": 5,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "piano-chords-disco",
+      "name": "Disco piano chords",
+      "role": "harmony",
+      "family": "piano",
+      "band": "mid",
+      "density": "light",
+      "styles": [
+        "dance-disco-pop",
+        "synth-pop-revival"
+      ],
+      "detail": "Piano chords interchanging with funk bass and the house beat on Don\u2019t Start Now.",
+      "why": "Wikipedia: piano chords trade with the funk bass over the house beat.",
+      "sourceIds": [
+        "S08"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "organ",
+      "name": "Organ",
+      "role": "pad",
+      "family": "keys",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "rnb-soul-pop",
+        "pop-ballad",
+        "country-pop"
+      ],
+      "detail": "Organ as a prominent color on a 2025 staying-power soul/ballad highlight.",
+      "why": "HSD 2025 staying-power instrument list.",
+      "sourceIds": [
+        "S14"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "synth-nonbass",
+      "name": "Non-bass synth",
+      "role": "pad",
+      "family": "synth",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "synth-pop-revival",
+        "midtempo-pop",
+        "edm-pop",
+        "dance-disco-pop",
+        "pop-ballad",
+        "dark-minimal-pop"
+      ],
+      "detail": "Pads, stabs, or beds. Prominently featured synth on #1s fell from 94% (2021) to 44% (2025), so treat as optional color, not automatic.",
+      "why": "HSD 2025 #1 synth-prominence trend.",
+      "sourceIds": [
+        "S03",
+        "S14"
+      ],
+      "weight": 6,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "reverbed-synth",
+      "name": "Sparse reverbed synth",
+      "role": "pad",
+      "family": "synth",
+      "band": "mid",
+      "density": "light",
+      "styles": [
+        "dark-minimal-pop",
+        "trap-pop"
+      ],
+      "detail": "Single reverbed synth on half notes as a trap-pop intro bed, leaving tempo ambiguous (70 vs 140).",
+      "why": "Joe Bennett\u2019s 7 rings anatomy.",
+      "sourceIds": [
+        "S19"
+      ],
+      "weight": 5,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "synth-stabs",
+      "name": "Synth stabs / bursts",
+      "role": "lead",
+      "family": "synth",
+      "band": "high",
+      "density": "medium",
+      "styles": [
+        "dance-disco-pop",
+        "synth-pop-revival",
+        "edm-pop"
+      ],
+      "detail": "Accent synth bursts and electro-violin stabs from the Don\u2019t Start Now inventory.",
+      "why": "Wikipedia production list.",
+      "sourceIds": [
+        "S08"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "string-section",
+      "name": "String section",
+      "role": "pad",
+      "family": "strings",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "dance-disco-pop",
+        "pop-ballad",
+        "rnb-soul-pop",
+        "synth-pop-revival"
+      ],
+      "detail": "Accented or sustained strings. Don\u2019t Start Now uses accented strings; Luther lists a string section.",
+      "why": "HSD Luther + Wikipedia Don\u2019t Start Now.",
+      "sourceIds": [
+        "S03",
+        "S08"
+      ],
+      "weight": 5,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "electro-violin",
+      "name": "Electro-violin stabs",
+      "role": "lead",
+      "family": "strings",
+      "band": "high",
+      "density": "light",
+      "styles": [
+        "dance-disco-pop",
+        "synth-pop-revival"
+      ],
+      "detail": "Electro-violin stabs as a French-bloghouse disco trope on Don\u2019t Start Now.",
+      "why": "Wikipedia production description.",
+      "sourceIds": [
+        "S08"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "sidechain-pad",
+      "name": "Sidechained pad",
+      "role": "pad",
+      "family": "synth",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "dance-disco-pop",
+        "edm-pop",
+        "synth-pop-revival",
+        "midtempo-pop"
+      ],
+      "detail": "Pad or vocal ducked to the kick so the groove and vocal feel locked; SOS details LFO-Tool ducking of 10\u201340%.",
+      "why": "Ian Kirkpatrick / SOS Inside Track on Don\u2019t Start Now.",
+      "sourceIds": [
+        "S18"
+      ],
+      "weight": 6,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "dotted-delay-throw",
+      "name": "Dotted-eighth delay throw",
+      "role": "fx",
+      "family": "vocal-fx",
+      "band": "high",
+      "density": "light",
+      "styles": [
+        "dance-disco-pop",
+        "synth-pop-revival",
+        "midtempo-pop",
+        "edm-pop"
+      ],
+      "detail": "Light dotted-eighth delay before saturation so the delay blooms in vocal gaps (sidechained delay).",
+      "why": "SOS Don\u2019t Start Now vocal chain (H-Delay + Saturn).",
+      "sourceIds": [
+        "S18"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "formant-vocal",
+      "name": "Formant-shifted vocal color",
+      "role": "fx",
+      "family": "vocal-fx",
+      "band": "mid",
+      "density": "light",
+      "styles": [
+        "dance-disco-pop",
+        "synth-pop-revival",
+        "edm-pop",
+        "dark-minimal-pop"
+      ],
+      "detail": "Formant shift (Little Alterboy) plus stereo microshift on a mono vocal.",
+      "why": "SOS Don\u2019t Start Now vocal chain.",
+      "sourceIds": [
+        "S18"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "soft-attack-bass",
+      "name": "Soft-attack skipping bass",
+      "role": "bass",
+      "family": "synth-bass",
+      "band": "low",
+      "density": "light",
+      "styles": [
+        "trap-pop",
+        "dark-minimal-pop"
+      ],
+      "detail": "Mellow soft-attack, quick-decay bass that dodges the vocal, bookending phrases on 7 rings.",
+      "why": "Joe Bennett 7 rings anatomy.",
+      "sourceIds": [
+        "S19"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "keyboard-outline",
+      "name": "Sparse keyboard outline",
+      "role": "harmony",
+      "family": "keys",
+      "band": "mid",
+      "density": "light",
+      "styles": [
+        "trap-pop",
+        "dark-minimal-pop",
+        "rnb-soul-pop"
+      ],
+      "detail": "Keyboard that only begins outlining chords after a deliberately drum-less intro.",
+      "why": "Joe Bennett: keyboard enters after a one-synth intro on 7 rings.",
+      "sourceIds": [
+        "S19"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "synth-postchorus",
+      "name": "Synth-focused post-chorus bed",
+      "role": "lead",
+      "family": "synth",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "dark-minimal-pop",
+        "trap-pop",
+        "edm-pop"
+      ],
+      "detail": "Synth-led post-chorus after a vocal chorus, as HSD describes on bad guy.",
+      "why": "HSD bad guy technique spotlight.",
+      "sourceIds": [
+        "S22"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "ohs-ahs",
+      "name": "Oh / ah vocalise",
+      "role": "pad",
+      "family": "vocal",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "midtempo-pop",
+        "pop-ballad",
+        "dance-disco-pop",
+        "edm-pop"
+      ],
+      "detail": "Untexted vocalise is a documented postchorus function (continuation after the lyrical hook).",
+      "why": "Osborn summarizing postchorus functions; Stroud anthem/codetta types.",
+      "sourceIds": [
+        "S05",
+        "S16"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "toms-fill",
+      "name": "Tom / drum fill",
+      "role": "drums",
+      "family": "fill",
+      "band": "low",
+      "density": "medium",
+      "styles": [
+        "any"
+      ],
+      "detail": "Drum fill as a common end-of-section gesture at verse-to-chorus boundaries.",
+      "why": "Open Music Theory: drum fill as a section-boundary marker.",
+      "sourceIds": [
+        "S29"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "ride-cymbal",
+      "name": "Ride cymbal lift",
+      "role": "drums",
+      "family": "hats",
+      "band": "high",
+      "density": "medium",
+      "styles": [
+        "pop-ballad",
+        "midtempo-pop",
+        "country-pop",
+        "rnb-soul-pop"
+      ],
+      "detail": "Ride or more-open metal as a late-song intensification color on acoustic-leaning kits.",
+      "why": "Late-song intensification is listed as closing rhetoric in Open Music Theory.",
+      "sourceIds": [
+        "S29",
+        "S12"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "shaker",
+      "name": "Shaker / tambourine layer",
+      "role": "drums",
+      "family": "perc",
+      "band": "high",
+      "density": "light",
+      "styles": [
+        "dance-disco-pop",
+        "midtempo-pop",
+        "country-pop",
+        "acoustic-folk-pop"
+      ],
+      "detail": "Light 8th or 16th percussion that raises pre-chorus motion without adding bass mass.",
+      "why": "Prechorus buildup via rhythmic activity rather than mass is described in the pop-drop / teleology literature.",
+      "sourceIds": [
+        "S15",
+        "S17"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "house-hats",
+      "name": "House offbeat hats",
+      "role": "drums",
+      "family": "hats",
+      "band": "high",
+      "density": "light",
+      "styles": [
+        "dance-disco-pop",
+        "edm-pop",
+        "synth-pop-revival"
+      ],
+      "detail": "Open/offbeat hats over four-on-the-floor, the house-beat complement to Don\u2019t Start Now\u2019s kick.",
+      "why": "Don\u2019t Start Now is explicitly a house-beat nu-disco record.",
+      "sourceIds": [
+        "S08",
+        "S07"
+      ],
+      "weight": 5,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "layered-clap-snare",
+      "name": "Layered clap + snare",
+      "role": "drums",
+      "family": "snare",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "dance-disco-pop",
+        "midtempo-pop",
+        "synth-pop-revival",
+        "edm-pop"
+      ],
+      "detail": "Snare thickened with clap for a radio backbeat, sitting on 2 and 4 in 4/4 pop.",
+      "why": "Claps documented on Don\u2019t Start Now; backbeat 2-and-4 is the 4/4 chart default.",
+      "sourceIds": [
+        "S08",
+        "S23"
+      ],
+      "weight": 5,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "half-time-hats",
+      "name": "Straight 8th hats (half-time)",
+      "role": "drums",
+      "family": "hats",
+      "band": "high",
+      "density": "light",
+      "styles": [
+        "trap-pop",
+        "dark-minimal-pop",
+        "rnb-soul-pop"
+      ],
+      "detail": "Sparser hats when the vocal is in the 60\u201380 felt range, leaving room for occasional 32nd rolls.",
+      "why": "Trap sources: artists perform ~60\u201380 while hats articulate the faster grid only as ornament.",
+      "sourceIds": [
+        "S20",
+        "S21"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "pitched-808-glide",
+      "name": "Pitched 808 glides",
+      "role": "bass",
+      "family": "808",
+      "band": "sub",
+      "density": "heavy",
+      "styles": [
+        "trap-pop",
+        "dark-minimal-pop"
+      ],
+      "conflictsWith": [
+        "synth-sub"
+      ],
+      "occupiesSub": false,
+      "detail": "Pitch slides on the same 808 occupant \u2014 not a second sub \u2014 the long 2-note boom language TIDAL cites from God\u2019s Plan-era pop-rap.",
+      "why": "TIDAL 808 history for trap/pop-rap low end.",
+      "sourceIds": [
+        "S20"
+      ],
+      "weight": 5,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "gritty-midbass",
+      "name": "Gritty mid synth bass",
+      "role": "bass",
+      "family": "synth-bass",
+      "band": "low",
+      "density": "medium",
+      "styles": [
+        "edm-pop",
+        "synth-pop-revival",
+        "dance-disco-pop"
+      ],
+      "detail": "Audible mid bass above sub so the drop still reads on small speakers after the kick returns.",
+      "why": "EDM drop restores kick/low end; SOS treats mid bass and sub as separate layers.",
+      "sourceIds": [
+        "S16",
+        "S18"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "arp-synth",
+      "name": "Arpeggiated synth",
+      "role": "lead",
+      "family": "synth",
+      "band": "high",
+      "density": "medium",
+      "styles": [
+        "synth-pop-revival",
+        "edm-pop",
+        "dance-disco-pop"
+      ],
+      "detail": "Repeating synth figure as an instrumental hook bed, a tracked HSD hook category.",
+      "why": "HSD platform tracks instrumental-hook techniques on Hot 100 top 10s.",
+      "sourceIds": [
+        "S30",
+        "S08"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "pluck-synth",
+      "name": "Pluck synth",
+      "role": "harmony",
+      "family": "synth",
+      "band": "high",
+      "density": "light",
+      "styles": [
+        "edm-pop",
+        "synth-pop-revival",
+        "midtempo-pop",
+        "dance-disco-pop"
+      ],
+      "detail": "Short synth plucks outlining harmony without filling the pad band.",
+      "why": "Non-bass synth remains a prominent (if declining) #1 color; plucks keep density legal in pre-chorus.",
+      "sourceIds": [
+        "S03",
+        "S15"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "supersaw-lead",
+      "name": "Detuned saw lead",
+      "role": "lead",
+      "family": "synth",
+      "band": "high",
+      "density": "heavy",
+      "styles": [
+        "edm-pop",
+        "synth-pop-revival"
+      ],
+      "detail": "Wide detuned saw reserved for drop or late chorus so verses stay incomplete.",
+      "why": "Osborn: drops reserve catchy synth hooks; verses stay sparser in pop-drop analyses.",
+      "sourceIds": [
+        "S16",
+        "S15"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "pad-strings-soft",
+      "name": "Soft string pad",
+      "role": "pad",
+      "family": "strings",
+      "band": "mid",
+      "density": "light",
+      "styles": [
+        "pop-ballad",
+        "rnb-soul-pop",
+        "midtempo-pop"
+      ],
+      "detail": "Sustained strings as a ballad/R&B bed, matching Luther\u2019s string-section listing without forcing disco accents.",
+      "why": "Luther prominent instruments include string section.",
+      "sourceIds": [
+        "S03"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "power-chords-lite",
+      "name": "Restrained electric rhythm",
+      "role": "harmony",
+      "family": "guitar",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "midtempo-pop",
+        "country-pop",
+        "pop-ballad"
+      ],
+      "detail": "Electric rhythm guitar as a wide-genre 2024 #1 color, kept out of trap-only lanes.",
+      "why": "HSD: electric guitar on country, hip-hop/rap, pop, and R&B #1s.",
+      "sourceIds": [
+        "S13"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "fingerpicked-guitar",
+      "name": "Fingerpicked acoustic",
+      "role": "harmony",
+      "family": "guitar",
+      "band": "mid",
+      "density": "light",
+      "styles": [
+        "acoustic-folk-pop",
+        "pop-ballad",
+        "country-pop"
+      ],
+      "detail": "Picked acoustic figure for song-led folk/country-pop verses.",
+      "why": "Acoustic guitar is attested on country-influenced #1s and folk-influenced 2024 country-pop.",
+      "sourceIds": [
+        "S13"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "slide-guitar",
+      "name": "Slide / country electric lead",
+      "role": "lead",
+      "family": "guitar",
+      "band": "high",
+      "density": "medium",
+      "styles": [
+        "country-pop"
+      ],
+      "detail": "Country electric lead/slide color consistent with electric guitar + fiddle country #1 palettes.",
+      "why": "HSD 2024 country #1: electric guitar, fiddle, banjo.",
+      "sourceIds": [
+        "S13"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "808-and-acoustic-split",
+      "name": "Electronic perc + dry snap",
+      "role": "drums",
+      "family": "perc",
+      "band": "high",
+      "density": "light",
+      "styles": [
+        "dark-minimal-pop",
+        "trap-pop",
+        "rnb-soul-pop"
+      ],
+      "detail": "Dry snaps or perc against electronic drums, echoing snaps + electronic or acoustic splits in HSD lists.",
+      "why": "Snaps listed as a standalone prominent instrument; electronic drums on Luther.",
+      "sourceIds": [
+        "S14",
+        "S03"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "filtered-intro-groove",
+      "name": "Low-passed intro groove",
+      "role": "fx",
+      "family": "transition",
+      "band": "low",
+      "density": "light",
+      "styles": [
+        "dance-disco-pop",
+        "edm-pop",
+        "synth-pop-revival",
+        "midtempo-pop"
+      ],
+      "detail": "Filter-closed groove in the intro, opened as sections escalate \u2014 a density gradient, not a new instrument.",
+      "why": "Pop-drop thesis: verses sparse, prechorus density gradient, chorus fuller.",
+      "sourceIds": [
+        "S15"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "silence-bar",
+      "name": "Withheld-bar / mute",
+      "role": "fx",
+      "family": "transition",
+      "band": "mid",
+      "density": "light",
+      "styles": [
+        "edm-pop",
+        "dance-disco-pop",
+        "dark-minimal-pop",
+        "trap-pop",
+        "synth-pop-revival"
+      ],
+      "detail": "Accompaniment pull or one-bar mute before chorus/drop. HSD names this S.I.A. accompaniment-pull on bad guy.",
+      "why": "HSD bad guy; UD thesis mute before drop; Nobile teleology.",
+      "sourceIds": [
+        "S22",
+        "S15",
+        "S17"
+      ],
+      "weight": 6,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "adlib-stack",
+      "name": "Late ad-lib stack",
+      "role": "lead",
+      "family": "vocal",
+      "band": "high",
+      "density": "medium",
+      "styles": [
+        "rnb-soul-pop",
+        "trap-pop",
+        "midtempo-pop",
+        "dance-disco-pop"
+      ],
+      "detail": "Extra ad-libs on the last chorus as late-song intensification.",
+      "why": "Open Music Theory closing rhetoric includes late-song intensification and immediate repetition of a core section.",
+      "sourceIds": [
+        "S29"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "whisper-double",
+      "name": "Whisper / breath double",
+      "role": "lead",
+      "family": "vocal",
+      "band": "high",
+      "density": "light",
+      "styles": [
+        "dark-minimal-pop",
+        "trap-pop",
+        "pop-ballad"
+      ],
+      "detail": "Close, breathy double that keeps a sparse mix intimate instead of stacking wide BGVs.",
+      "why": "Minimal/sparse trap-pop arrangements (7 rings, bad guy) leave space and vary vocal production instead of adding mass.",
+      "sourceIds": [
+        "S19",
+        "S22"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "spoken-tag",
+      "name": "Spoken title tag",
+      "role": "lead",
+      "family": "vocal",
+      "band": "mid",
+      "density": "light",
+      "styles": [
+        "dark-minimal-pop",
+        "trap-pop",
+        "midtempo-pop"
+      ],
+      "detail": "Spoken or half-spoken title as a turnaround hook, as HSD describes on bad guy\u2019s \u201cI\u2019m the bad guy.\u201d",
+      "why": "HSD icing-on-the-cake hook technique.",
+      "sourceIds": [
+        "S22"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "hum-hook",
+      "name": "Post-chorus vocalise hook",
+      "role": "lead",
+      "family": "vocal",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "rnb-soul-pop",
+        "midtempo-pop",
+        "edm-pop",
+        "dance-disco-pop"
+      ],
+      "detail": "Syllabic na-na / oh hook after the lyrical chorus \u2014 Stroud\u2019s anthem/codetta postchorus family.",
+      "why": "Stroud and HSD post-chorus hook-center trend (63% of 2025 top 10s).",
+      "sourceIds": [
+        "S05",
+        "S12"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "disco-strings-accent",
+      "name": "Accented disco strings",
+      "role": "pad",
+      "family": "strings",
+      "band": "high",
+      "density": "medium",
+      "styles": [
+        "dance-disco-pop"
+      ],
+      "detail": "Short accented string figures rather than a full romantic pad.",
+      "why": "Wikipedia: accented strings on Don\u2019t Start Now.",
+      "sourceIds": [
+        "S08"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "electro-house-stab",
+      "name": "House synth stab",
+      "role": "harmony",
+      "family": "synth",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "dance-disco-pop",
+        "edm-pop",
+        "synth-pop-revival"
+      ],
+      "detail": "Staccato synth chords locked to the house kick, the Don\u2019t Start Now synth-chord lock.",
+      "why": "Robin Frederick: rhythm, funk bass, and synth chords locked to the beat.",
+      "sourceIds": [
+        "S07"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "live-perc-loop",
+      "name": "Live percussion loop",
+      "role": "drums",
+      "family": "perc",
+      "band": "high",
+      "density": "light",
+      "styles": [
+        "rnb-soul-pop",
+        "midtempo-pop",
+        "country-pop"
+      ],
+      "detail": "Shaker/conga-like perc as part of drums/percussion, which HSD found on all 2024 #1s.",
+      "why": "HSD: all 2024 #1s featured drums/percussion.",
+      "sourceIds": [
+        "S13"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "rimshot",
+      "name": "Rimshot groove",
+      "role": "drums",
+      "family": "snare",
+      "band": "mid",
+      "density": "light",
+      "styles": [
+        "rnb-soul-pop",
+        "dark-minimal-pop",
+        "pop-ballad"
+      ],
+      "detail": "Rim or sidestick verse groove, saving the full snare for later intensification.",
+      "why": "Verse sparsity vs chorus fullness is the attested density map.",
+      "sourceIds": [
+        "S15",
+        "S29"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "clap-only-bridge",
+      "name": "Claps-only percussion",
+      "role": "drums",
+      "family": "clap",
+      "band": "mid",
+      "density": "light",
+      "styles": [
+        "midtempo-pop",
+        "dance-disco-pop",
+        "pop-ballad"
+      ],
+      "detail": "Bridge percussion reduced to claps so the last chorus returns the full kit.",
+      "why": "Bridge as contrast/thinning, then final-chorus intensification.",
+      "sourceIds": [
+        "S29",
+        "S15"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "sub-drop-return",
+      "name": "Drop sub re-entry",
+      "role": "bass",
+      "family": "sub",
+      "band": "sub",
+      "density": "heavy",
+      "styles": [
+        "edm-pop",
+        "dance-disco-pop"
+      ],
+      "conflictsWith": [
+        "808-kick"
+      ],
+      "occupiesSub": true,
+      "detail": "Sub withheld on the riser and slammed back with the kick on the drop.",
+      "why": "Osborn: kick absent in riser, returns on drop; mutually dependent pair.",
+      "sourceIds": [
+        "S16"
+      ],
+      "weight": 5,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "vocal-harmony-thirds",
+      "name": "Harmony vocal in thirds",
+      "role": "lead",
+      "family": "vocal",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "country-pop",
+        "acoustic-folk-pop",
+        "pop-ballad",
+        "midtempo-pop"
+      ],
+      "detail": "Sung harmony lines, common when the lead is fully sung rather than rap-hybrid.",
+      "why": "HSD tracks sung lead delivery; chorus BGVs are an energy marker.",
+      "sourceIds": [
+        "S13",
+        "S29"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "rap-verse-cadence",
+      "name": "Rap or spoken verse cadence",
+      "role": "lead",
+      "family": "vocal",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "trap-pop",
+        "rnb-soul-pop",
+        "country-pop"
+      ],
+      "detail": "Rapped or sung/rapped hybrid verse against a sung chorus, documented on Luther and a 2024 country #1 verse 2.",
+      "why": "HSD lead-delivery tags.",
+      "sourceIds": [
+        "S03",
+        "S13"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "title-hook-lead",
+      "name": "Title-hook topline",
+      "role": "lead",
+      "family": "vocal",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "any"
+      ],
+      "detail": "Chorus carries the title hook; HSD tracks title placement in chorus and sometimes post-chorus.",
+      "why": "2024 #1 highlight lists title placement in chorus and post-chorus.",
+      "sourceIds": [
+        "S13",
+        "S16"
+      ],
+      "weight": 6,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "guitar-hook-riff",
+      "name": "Instrumental guitar hook",
+      "role": "lead",
+      "family": "guitar",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "country-pop",
+        "midtempo-pop",
+        "acoustic-folk-pop"
+      ],
+      "detail": "Short guitar hook as an instrumental hook technique (HSD hook category), not a rock solo default.",
+      "why": "HSD 2011 pop-trends excerpt noted solos were generally out; hooks remain.",
+      "sourceIds": [
+        "S04",
+        "S30"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "bass-hook",
+      "name": "Bass hook figure",
+      "role": "bass",
+      "family": "electric-bass",
+      "band": "low",
+      "density": "medium",
+      "styles": [
+        "dance-disco-pop",
+        "rnb-soul-pop",
+        "synth-pop-revival"
+      ],
+      "detail": "Bassline as a memorable instrumental hook, the Don\u2019t Start Now funk-bass model.",
+      "why": "Frederick and Wikipedia treat the bassline as a featured hook.",
+      "sourceIds": [
+        "S07",
+        "S08"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "perc-stomps",
+      "name": "Stomps / body perc",
+      "role": "drums",
+      "family": "perc",
+      "band": "low",
+      "density": "light",
+      "styles": [
+        "acoustic-folk-pop",
+        "country-pop",
+        "midtempo-pop"
+      ],
+      "detail": "Body perc / stomps as acoustic-kit adjacent color on folk/country-pop lanes.",
+      "why": "Acoustic-drum and acoustic-guitar lanes are the attested home for this texture.",
+      "sourceIds": [
+        "S12",
+        "S13"
+      ],
+      "weight": 2,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "tape-stop",
+      "name": "Tape-stop / speed dip",
+      "role": "fx",
+      "family": "transition",
+      "band": "mid",
+      "density": "light",
+      "styles": [
+        "edm-pop",
+        "dark-minimal-pop",
+        "trap-pop"
+      ],
+      "detail": "Momentary speed/pitch dip as a transition accent into a drop or pulled section.",
+      "why": "Used as an S.I.A.-style impact accentuator in electronic-leaning pop; pair only with attested pull/drop forms.",
+      "sourceIds": [
+        "S22",
+        "S16"
+      ],
+      "weight": 2,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "reverse-vocal",
+      "name": "Reverse vocal swell",
+      "role": "fx",
+      "family": "vocal-fx",
+      "band": "mid",
+      "density": "light",
+      "styles": [
+        "edm-pop",
+        "dark-minimal-pop",
+        "synth-pop-revival"
+      ],
+      "detail": "Reversed vocal crumb as a riser cousin into a chorus or drop.",
+      "why": "Riser family (Osborn) plus vocal-effected drop language.",
+      "sourceIds": [
+        "S16"
+      ],
+      "weight": 2,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "wide-chorus-guitar",
+      "name": "Chorused electric guitar",
+      "role": "harmony",
+      "family": "guitar",
+      "band": "high",
+      "density": "light",
+      "styles": [
+        "synth-pop-revival",
+        "midtempo-pop"
+      ],
+      "detail": "1980s-leaning chorus guitar as part of HSD\u2019s documented retro/80s-in-the-20s influence set.",
+      "why": "HSD 2024: retro influences in 38% of #1s; Don\u2019t Start Now channels 80s/Italo tropes.",
+      "sourceIds": [
+        "S11",
+        "S08"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "mallet-bell",
+      "name": "Bell / mallet one-shot",
+      "role": "lead",
+      "family": "synth",
+      "band": "high",
+      "density": "light",
+      "styles": [
+        "dark-minimal-pop",
+        "midtempo-pop",
+        "pop-ballad"
+      ],
+      "detail": "High one-shot hook used sparingly so a sparse mix still has an instrumental identifier.",
+      "why": "HSD tracks icing-on-the-cake and instrumental hooks; keep density low in minimal lanes.",
+      "sourceIds": [
+        "S22",
+        "S30"
+      ],
+      "weight": 2,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "low-brass-swell",
+      "name": "Low brass swell",
+      "role": "pad",
+      "family": "brass",
+      "band": "low",
+      "density": "medium",
+      "styles": [
+        "pop-ballad",
+        "rnb-soul-pop"
+      ],
+      "avoidStyles": [
+        "trap-pop",
+        "edm-pop"
+      ],
+      "detail": "Occasional soul/ballad swell; not a 2024\u20132025 #1 default instrument.",
+      "why": "Only offered in soul/ballad lanes where organ/strings are already attested; not encoded as a general pop trope.",
+      "sourceIds": [
+        "S14",
+        "S03"
+      ],
+      "weight": 1,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "choir-pad",
+      "name": "Choir-texture pad",
+      "role": "pad",
+      "family": "vocal",
+      "band": "mid",
+      "density": "heavy",
+      "styles": [
+        "pop-ballad",
+        "edm-pop"
+      ],
+      "detail": "Choir-like pad for final-chorus widening, a BGV/vocalise intensification, not a gospel arrangement claim.",
+      "why": "Late-song intensification + stacked vocals as chorus energy.",
+      "sourceIds": [
+        "S29"
+      ],
+      "weight": 2,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "click-perc",
+      "name": "Dry click perc",
+      "role": "drums",
+      "family": "perc",
+      "band": "high",
+      "density": "light",
+      "styles": [
+        "dark-minimal-pop",
+        "trap-pop",
+        "rnb-soul-pop"
+      ],
+      "detail": "Tiny click replacing a full hat pattern in a sparse verse.",
+      "why": "7 rings / minimal trap-pop leave drums out or tiny before the groove arrives.",
+      "sourceIds": [
+        "S19"
+      ],
+      "weight": 2,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "open-hat-lift",
+      "name": "Open hat on the lift",
+      "role": "drums",
+      "family": "hats",
+      "band": "high",
+      "density": "light",
+      "styles": [
+        "dance-disco-pop",
+        "edm-pop",
+        "midtempo-pop"
+      ],
+      "detail": "Open hat entering at pre-chorus or chorus to mark the lift without adding a new harmonic part.",
+      "why": "Prechorus increases rhythmic activity; chorus restores fuller kit.",
+      "sourceIds": [
+        "S15",
+        "S17"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "second-guitar-double",
+      "name": "Doubled guitar part",
+      "role": "harmony",
+      "family": "guitar",
+      "band": "mid",
+      "density": "medium",
+      "styles": [
+        "midtempo-pop",
+        "country-pop",
+        "acoustic-folk-pop"
+      ],
+      "detail": "Second guitar entering at the chorus, the U2 Pride example used by Open Music Theory to show chorus energy.",
+      "why": "OMT: guitar becomes more active and is doubled at the chorus boundary.",
+      "sourceIds": [
+        "S29"
+      ],
+      "weight": 3,
+      "era": [
+        "any"
+      ]
+    },
+    {
+      "id": "high-harmony-register",
+      "name": "Higher-register lead on chorus",
+      "role": "lead",
+      "family": "vocal",
+      "band": "high",
+      "density": "medium",
+      "styles": [
+        "any"
+      ],
+      "detail": "Lead rises in register at the chorus \u2014 an attested section-boundary and energy cue.",
+      "why": "Open Music Theory: lead vocals rise in register into the chorus.",
+      "sourceIds": [
+        "S29"
+      ],
+      "weight": 4,
+      "era": [
+        "any"
+      ]
+    }
+  ],
+  "pairings": [
+    {
+      "id": "fotf-funk-claps",
+      "with": [
+        "fotf-kick"
+      ],
+      "add": "funk-electric-bass",
+      "styles": [
+        "dance-disco-pop"
+      ],
+      "weight": 0.95,
+      "why": "Don\u2019t Start Now locks four-on-the-floor kick to a funk bassline.",
+      "sourceIds": [
+        "S07",
+        "S08"
+      ]
+    },
+    {
+      "id": "fotf-house-hats",
+      "with": [
+        "fotf-kick"
+      ],
+      "add": "house-hats",
+      "styles": [
+        "dance-disco-pop",
+        "edm-pop"
+      ],
+      "weight": 0.85,
+      "why": "House beat = kick every quarter plus offbeat hats.",
+      "sourceIds": [
+        "S08",
+        "S16"
+      ]
+    },
+    {
+      "id": "fotf-claps",
+      "with": [
+        "fotf-kick"
+      ],
+      "add": "handclaps",
+      "styles": [
+        "dance-disco-pop"
+      ],
+      "weight": 0.8,
+      "why": "Handclaps listed on Don\u2019t Start Now.",
+      "sourceIds": [
+        "S08"
+      ]
+    },
+    {
+      "id": "fotf-cowbell",
+      "with": [
+        "fotf-kick"
+      ],
+      "add": "cowbell",
+      "styles": [
+        "dance-disco-pop"
+      ],
+      "weight": 0.45,
+      "why": "Cowbell listed on Don\u2019t Start Now.",
+      "sourceIds": [
+        "S07",
+        "S08"
+      ]
+    },
+    {
+      "id": "fotf-strings",
+      "with": [
+        "fotf-kick",
+        "funk-electric-bass"
+      ],
+      "add": "disco-strings-accent",
+      "styles": [
+        "dance-disco-pop"
+      ],
+      "weight": 0.7,
+      "why": "Accented strings on the same record.",
+      "sourceIds": [
+        "S08"
+      ]
+    },
+    {
+      "id": "fotf-piano",
+      "with": [
+        "funk-electric-bass"
+      ],
+      "add": "piano-chords-disco",
+      "styles": [
+        "dance-disco-pop"
+      ],
+      "weight": 0.7,
+      "why": "Piano chords interchange with the funk bass.",
+      "sourceIds": [
+        "S08"
+      ]
+    },
+    {
+      "id": "fotf-sub",
+      "with": [
+        "funk-electric-bass",
+        "synth-bass"
+      ],
+      "add": "synth-sub",
+      "styles": [
+        "dance-disco-pop",
+        "edm-pop"
+      ],
+      "weight": 0.75,
+      "why": "SOS: layered bass + sub as distinct parts.",
+      "sourceIds": [
+        "S18"
+      ]
+    },
+    {
+      "id": "kick-sidechain",
+      "with": [
+        "fotf-kick"
+      ],
+      "add": "sidechain-pad",
+      "styles": [
+        "dance-disco-pop",
+        "edm-pop",
+        "synth-pop-revival"
+      ],
+      "weight": 0.8,
+      "why": "SOS LFO-Tool ducking to the kick.",
+      "sourceIds": [
+        "S18"
+      ]
+    },
+    {
+      "id": "808-hats",
+      "with": [
+        "808-kick"
+      ],
+      "add": "trap-hats",
+      "styles": [
+        "trap-pop",
+        "dark-minimal-pop"
+      ],
+      "weight": 0.9,
+      "why": "808 + rolled hats are the trap core.",
+      "sourceIds": [
+        "S20",
+        "S21"
+      ]
+    },
+    {
+      "id": "808-snare3",
+      "with": [
+        "808-kick"
+      ],
+      "add": "trap-snare-3",
+      "styles": [
+        "trap-pop",
+        "dark-minimal-pop"
+      ],
+      "weight": 0.9,
+      "why": "Snare/clap on 3 with 808 low end.",
+      "sourceIds": [
+        "S20",
+        "S21"
+      ]
+    },
+    {
+      "id": "808-glide",
+      "with": [
+        "808-kick"
+      ],
+      "add": "pitched-808-glide",
+      "styles": [
+        "trap-pop"
+      ],
+      "weight": 0.55,
+      "why": "Pitched long 808s in pop-rap.",
+      "sourceIds": [
+        "S20"
+      ]
+    },
+    {
+      "id": "trap-soft-bass",
+      "with": [
+        "trap-hats"
+      ],
+      "add": "soft-attack-bass",
+      "styles": [
+        "trap-pop",
+        "dark-minimal-pop"
+      ],
+      "weight": 0.5,
+      "why": "7 rings bass vs hat zipper.",
+      "sourceIds": [
+        "S19"
+      ]
+    },
+    {
+      "id": "trap-sparse-synth",
+      "with": [
+        "808-kick",
+        "soft-attack-bass"
+      ],
+      "add": "reverbed-synth",
+      "styles": [
+        "dark-minimal-pop",
+        "trap-pop"
+      ],
+      "weight": 0.7,
+      "why": "7 rings sparse synth intro.",
+      "sourceIds": [
+        "S19"
+      ]
+    },
+    {
+      "id": "acoustic-kit-ebass",
+      "with": [
+        "acoustic-kit"
+      ],
+      "add": "electric-bass",
+      "styles": [
+        "midtempo-pop",
+        "country-pop",
+        "pop-ballad",
+        "rnb-soul-pop"
+      ],
+      "weight": 0.7,
+      "why": "2024 #1s pair acoustic drums with electric bass outside hip-hop/rap.",
+      "sourceIds": [
+        "S13"
+      ]
+    },
+    {
+      "id": "acoustic-kit-aguit",
+      "with": [
+        "acoustic-kit"
+      ],
+      "add": "acoustic-guitar",
+      "styles": [
+        "country-pop",
+        "acoustic-folk-pop"
+      ],
+      "weight": 0.8,
+      "why": "Acoustic drums + acoustic guitar on country-influenced #1s.",
+      "sourceIds": [
+        "S13"
+      ]
+    },
+    {
+      "id": "country-banjo",
+      "with": [
+        "acoustic-guitar"
+      ],
+      "add": "banjo",
+      "styles": [
+        "country-pop"
+      ],
+      "weight": 0.7,
+      "why": "2024 country #1 instrument list.",
+      "sourceIds": [
+        "S13"
+      ]
+    },
+    {
+      "id": "country-fiddle",
+      "with": [
+        "acoustic-guitar",
+        "banjo"
+      ],
+      "add": "fiddle",
+      "styles": [
+        "country-pop"
+      ],
+      "weight": 0.65,
+      "why": "2024 country #1 instrument list.",
+      "sourceIds": [
+        "S13"
+      ]
+    },
+    {
+      "id": "country-eguit",
+      "with": [
+        "acoustic-guitar"
+      ],
+      "add": "electric-guitar",
+      "styles": [
+        "country-pop"
+      ],
+      "weight": 0.7,
+      "why": "Same highlight lists acoustic and electric guitar.",
+      "sourceIds": [
+        "S13"
+      ]
+    },
+    {
+      "id": "luther-set",
+      "with": [
+        "synth-bass"
+      ],
+      "add": "electric-piano",
+      "styles": [
+        "rnb-soul-pop"
+      ],
+      "weight": 0.7,
+      "why": "Luther: synth bass, electric piano, strings, acoustic guitar, electronic drums.",
+      "sourceIds": [
+        "S03"
+      ]
+    },
+    {
+      "id": "luther-strings",
+      "with": [
+        "electric-piano"
+      ],
+      "add": "string-section",
+      "styles": [
+        "rnb-soul-pop"
+      ],
+      "weight": 0.65,
+      "why": "Luther string section.",
+      "sourceIds": [
+        "S03"
+      ]
+    },
+    {
+      "id": "luther-aguit",
+      "with": [
+        "electric-piano"
+      ],
+      "add": "acoustic-guitar",
+      "styles": [
+        "rnb-soul-pop"
+      ],
+      "weight": 0.55,
+      "why": "Luther acoustic guitar.",
+      "sourceIds": [
+        "S03"
+      ]
+    },
+    {
+      "id": "soul-organ-snaps",
+      "with": [
+        "organ"
+      ],
+      "add": "snaps",
+      "styles": [
+        "rnb-soul-pop",
+        "pop-ballad"
+      ],
+      "weight": 0.6,
+      "why": "2025 staying-power highlight: organ + snaps + electric bass + acoustic drums.",
+      "sourceIds": [
+        "S14"
+      ]
+    },
+    {
+      "id": "soul-ebass",
+      "with": [
+        "organ"
+      ],
+      "add": "electric-bass",
+      "styles": [
+        "rnb-soul-pop",
+        "pop-ballad"
+      ],
+      "weight": 0.7,
+      "why": "Same highlight lists electric bass.",
+      "sourceIds": [
+        "S14"
+      ]
+    },
+    {
+      "id": "riser-build",
+      "with": [
+        "white-noise-riser"
+      ],
+      "add": "snare-build",
+      "styles": [
+        "edm-pop"
+      ],
+      "weight": 0.9,
+      "why": "Osborn: riser almost always contains a snare build.",
+      "sourceIds": [
+        "S16"
+      ]
+    },
+    {
+      "id": "riser-drop-sub",
+      "with": [
+        "white-noise-riser"
+      ],
+      "add": "sub-drop-return",
+      "styles": [
+        "edm-pop"
+      ],
+      "weight": 0.85,
+      "why": "Kick/sub return defines the drop.",
+      "sourceIds": [
+        "S16"
+      ]
+    },
+    {
+      "id": "drop-vocchop",
+      "with": [
+        "sub-drop-return",
+        "fotf-kick"
+      ],
+      "add": "vocal-chops",
+      "styles": [
+        "edm-pop"
+      ],
+      "weight": 0.6,
+      "why": "Post-2016 Top-40 EDM drops often add effected vocal samples.",
+      "sourceIds": [
+        "S16"
+      ]
+    },
+    {
+      "id": "chorus-stacks",
+      "with": [
+        "lead-vocal"
+      ],
+      "add": "bgv-stacks",
+      "styles": [
+        "any"
+      ],
+      "weight": 0.7,
+      "why": "BGVs added at chorus boundaries.",
+      "sourceIds": [
+        "S29"
+      ]
+    },
+    {
+      "id": "chorus-doubles",
+      "with": [
+        "lead-vocal"
+      ],
+      "add": "vocal-doubles",
+      "styles": [
+        "any"
+      ],
+      "weight": 0.8,
+      "why": "Doubled leads are standard radio vocal production; SOS details the stereo chain.",
+      "sourceIds": [
+        "S18",
+        "S29"
+      ]
+    },
+    {
+      "id": "pull-mute",
+      "with": [
+        "lead-vocal"
+      ],
+      "add": "silence-bar",
+      "styles": [
+        "edm-pop",
+        "dark-minimal-pop",
+        "dance-disco-pop",
+        "trap-pop"
+      ],
+      "weight": 0.65,
+      "why": "Accompaniment-pull S.I.A. / mute before drop.",
+      "sourceIds": [
+        "S22",
+        "S15"
+      ]
+    },
+    {
+      "id": "post-synth",
+      "with": [
+        "lead-vocal"
+      ],
+      "add": "synth-postchorus",
+      "styles": [
+        "dark-minimal-pop",
+        "trap-pop"
+      ],
+      "weight": 0.5,
+      "why": "bad guy synth-focused post-chorus.",
+      "sourceIds": [
+        "S22"
+      ]
+    },
+    {
+      "id": "delay-throw",
+      "with": [
+        "lead-vocal"
+      ],
+      "add": "dotted-delay-throw",
+      "styles": [
+        "dance-disco-pop",
+        "synth-pop-revival"
+      ],
+      "weight": 0.55,
+      "why": "SOS dotted-eighth delay throw.",
+      "sourceIds": [
+        "S18"
+      ]
+    },
+    {
+      "id": "formant-color",
+      "with": [
+        "lead-vocal"
+      ],
+      "add": "formant-vocal",
+      "styles": [
+        "dance-disco-pop"
+      ],
+      "weight": 0.4,
+      "why": "SOS Little Alterboy formant.",
+      "sourceIds": [
+        "S18"
+      ]
+    },
+    {
+      "id": "guitar-double-chorus",
+      "with": [
+        "electric-guitar",
+        "acoustic-guitar"
+      ],
+      "add": "second-guitar-double",
+      "styles": [
+        "midtempo-pop",
+        "country-pop",
+        "acoustic-folk-pop"
+      ],
+      "weight": 0.45,
+      "why": "OMT doubled guitar at chorus.",
+      "sourceIds": [
+        "S29"
+      ]
+    },
+    {
+      "id": "ballad-piano-strings",
+      "with": [
+        "acoustic-piano"
+      ],
+      "add": "pad-strings-soft",
+      "styles": [
+        "pop-ballad"
+      ],
+      "weight": 0.7,
+      "why": "Ballad lane + attested string beds on slow #1s.",
+      "sourceIds": [
+        "S03",
+        "S14"
+      ]
+    },
+    {
+      "id": "title-in-chorus",
+      "with": [
+        "lead-vocal"
+      ],
+      "add": "title-hook-lead",
+      "styles": [
+        "any"
+      ],
+      "weight": 0.85,
+      "why": "Chorus as title-hook home.",
+      "sourceIds": [
+        "S13",
+        "S16"
+      ]
+    }
+  ],
+  "productionNotes": [
+    {
+      "id": "no-key",
+      "bucket": "policy",
+      "title": "Do not pick a key here",
+      "body": "This generator never assigns or suggests a song key. Choose key later from vocal range or reference tracks \u2014 it is out of scope on purpose.",
+      "styles": [
+        "any"
+      ],
+      "structures": [
+        "any"
+      ],
+      "sourceIds": [
+        "S00"
+      ]
+    },
+    {
+      "id": "first-chorus-late",
+      "bucket": "form",
+      "title": "Let the first chorus land later if the verse needs room",
+      "body": "HSD found the average time-to-first-chorus on 2024 #1s at 45 seconds (up from 33 in 2021). A third of 2025 #1s crossed the one-minute mark. Prefer 8\u201316 bar verses plus a pre-chorus rather than chorus-at-0:15 when using those years as models.",
+      "styles": [
+        "any"
+      ],
+      "structures": [
+        "any"
+      ],
+      "sourceIds": [
+        "S03",
+        "S11"
+      ]
+    },
+    {
+      "id": "three-choruses",
+      "bucket": "form",
+      "title": "Plan three chorus statements",
+      "body": "69% of 2024 Hot 100 #1s had three choruses, up from 31% in 2022. A doubled final chorus is an attested way to get that third hit without a new section type.",
+      "styles": [
+        "any"
+      ],
+      "structures": [
+        "three-chorus-double-final",
+        "i-v-pc-c-v-pc-c-b-o",
+        "ababcb",
+        "vpc-postchorus"
+      ],
+      "sourceIds": [
+        "S11",
+        "S27"
+      ]
+    },
+    {
+      "id": "prechorus-common",
+      "bucket": "form",
+      "title": "Use a pre-chorus as the default build",
+      "body": "Pre-choruses appeared in ~60% of late-1980s verse\u2013chorus hits (Summach) and 78% of 2025 #1s (HSD). Treat no-pre-chorus forms as the minority option.",
+      "styles": [
+        "any"
+      ],
+      "structures": [
+        "any"
+      ],
+      "sourceIds": [
+        "S01",
+        "S03"
+      ]
+    },
+    {
+      "id": "postchorus-hook",
+      "bucket": "form",
+      "title": "Add a post-chorus hook center",
+      "body": "56% of 2025 #1s had a post-chorus; 63% of 2025 top 10s had a post-chorus hook center \u2014 a decade high. Keep or raise energy and add a second (often syllabic or instrumental) hook.",
+      "styles": [
+        "dance-disco-pop",
+        "edm-pop",
+        "trap-pop",
+        "synth-pop-revival",
+        "midtempo-pop",
+        "dark-minimal-pop"
+      ],
+      "structures": [
+        "vpc-postchorus",
+        "riser-popdrop"
+      ],
+      "sourceIds": [
+        "S03",
+        "S12",
+        "S05"
+      ]
+    },
+    {
+      "id": "length-329",
+      "bucket": "form",
+      "title": "Target about three and a half minutes",
+      "body": "Average 2024 and 2025 #1 length was 3:29\u20133:30. The duration hint in this app is bar-math from attested section sizes, not a streaming-hack claim.",
+      "styles": [
+        "any"
+      ],
+      "structures": [
+        "any"
+      ],
+      "sourceIds": [
+        "S03",
+        "S11"
+      ]
+    },
+    {
+      "id": "density-gradient",
+      "bucket": "energy",
+      "title": "Build density through the pre-chorus",
+      "body": "Verses stay sparser; pre-choruses raise textural density; choruses are fuller. The pop-drop thesis treats that gradient as essential to the drop\u2019s impact.",
+      "styles": [
+        "any"
+      ],
+      "structures": [
+        "any"
+      ],
+      "sourceIds": [
+        "S15",
+        "S17"
+      ]
+    },
+    {
+      "id": "withhold-bar",
+      "bucket": "energy",
+      "title": "Pull the floor before the arrival",
+      "body": "Cut backing for a beat or bar before chorus/drop (HSD accompaniment-pull S.I.A.; UD thesis mute before drop). The vacuum makes the downbeat read as an event.",
+      "styles": [
+        "edm-pop",
+        "dance-disco-pop",
+        "dark-minimal-pop",
+        "trap-pop",
+        "synth-pop-revival"
+      ],
+      "structures": [
+        "any"
+      ],
+      "sourceIds": [
+        "S22",
+        "S15"
+      ]
+    },
+    {
+      "id": "anti-telos",
+      "bucket": "energy",
+      "title": "If the chorus is lyric-first, put the slam in a drop",
+      "body": "Nobile describes anti-telos choruses whose textural climax arrives in a following drop/post-chorus (e.g. Closer). Do not make every chorus the loudest section if you chose a pop-drop form.",
+      "styles": [
+        "edm-pop"
+      ],
+      "structures": [
+        "riser-popdrop"
+      ],
+      "sourceIds": [
+        "S17"
+      ]
+    },
+    {
+      "id": "riser-rules",
+      "bucket": "energy",
+      "title": "Riser = pitch up, lows out, kick gone, snare faster",
+      "body": "Osborn\u2019s Top-40 EDM riser: rising pitch, progressive low cut, four-on-the-floor kick withheld, snare attacks speeding from quarters to 16ths to a roll. The drop is the kick\u2019s return.",
+      "styles": [
+        "edm-pop"
+      ],
+      "structures": [
+        "riser-popdrop"
+      ],
+      "sourceIds": [
+        "S16"
+      ]
+    },
+    {
+      "id": "sidechain-vocal",
+      "bucket": "mix",
+      "title": "Duck pads and even vocals to the kick",
+      "body": "On Don\u2019t Start Now, Kirkpatrick used LFO Tool to duck the vocal ~10% on choruses and ~40% in verses so the vocal feels inside the groove. Do not add extra stem compression that erases the duck.",
+      "styles": [
+        "dance-disco-pop",
+        "edm-pop",
+        "synth-pop-revival"
+      ],
+      "requiresInstrument": [
+        "fotf-kick",
+        "sidechain-pad"
+      ],
+      "sourceIds": [
+        "S18"
+      ]
+    },
+    {
+      "id": "delay-bloom",
+      "bucket": "mix",
+      "title": "Let delay bloom only in the gaps",
+      "body": "Dotted-eighth delay into a compressor/saturator that pushes the delay up when the vocal leaves \u2014 SOS describes this as sidechaining the delay.",
+      "styles": [
+        "dance-disco-pop",
+        "synth-pop-revival"
+      ],
+      "requiresInstrument": [
+        "dotted-delay-throw",
+        "lead-vocal"
+      ],
+      "sourceIds": [
+        "S18"
+      ]
+    },
+    {
+      "id": "layer-bass",
+      "bucket": "mix",
+      "title": "Split sub and mid bass",
+      "body": "Don\u2019t Start Now treats sub-bass, bass, and synths as distinct layers. Keep one sub occupant (808 or sine sub), not both.",
+      "styles": [
+        "dance-disco-pop",
+        "edm-pop",
+        "synth-pop-revival"
+      ],
+      "sourceIds": [
+        "S18"
+      ]
+    },
+    {
+      "id": "one-sub",
+      "bucket": "constraint",
+      "title": "One sub occupant",
+      "body": "Trap sources note that a long 808 can replace a bass synth. This catalog forbids stacking 808 kick-bass with a separate sine sub.",
+      "styles": [
+        "trap-pop",
+        "dark-minimal-pop",
+        "edm-pop",
+        "dance-disco-pop"
+      ],
+      "sourceIds": [
+        "S20",
+        "S18"
+      ]
+    },
+    {
+      "id": "acoustic-vs-electronic",
+      "bucket": "drums",
+      "title": "Pick an acoustic or electronic drum identity",
+      "body": "2025 #1s had 0% blended acoustic+electronic drum identities (first time in over a decade). 2024 still had ~20% blends. This app prefers a primary identity: acoustic kit or electronic kit.",
+      "styles": [
+        "any"
+      ],
+      "structures": [
+        "any"
+      ],
+      "sourceIds": [
+        "S03",
+        "S13"
+      ]
+    },
+    {
+      "id": "synth-not-automatic",
+      "bucket": "harmony",
+      "title": "Do not auto-add a big synth bed",
+      "body": "Prominent synth on #1s fell from 94% (2021) to 44% (2025). Acoustic drums are up. Use synth when the lane is dance, EDM, or revival \u2014 not as a universal default.",
+      "styles": [
+        "midtempo-pop",
+        "acoustic-folk-pop",
+        "country-pop",
+        "pop-ballad"
+      ],
+      "sourceIds": [
+        "S03",
+        "S12"
+      ]
+    },
+    {
+      "id": "trap-grid",
+      "bucket": "drums",
+      "title": "Write trap-pop on a double-time grid",
+      "body": "Felt 70\u201390 BPM, DAW 140\u2013180. Hats can roll in 32nds; the vocal usually lives in half-time. Joe Bennett notes 7 rings can be counted 70 or 140 until drums enter.",
+      "styles": [
+        "trap-pop",
+        "dark-minimal-pop"
+      ],
+      "sourceIds": [
+        "S19",
+        "S20",
+        "S21"
+      ]
+    },
+    {
+      "id": "country-palette",
+      "bucket": "harmony",
+      "title": "Country-pop palette is guitar-first",
+      "body": "A documented 2024 country #1 used acoustic and electric guitar, acoustic drums, acoustic+synth bass, banjo, and fiddle. Acoustic guitar in that #1 sample was exclusive to country-influenced hits.",
+      "styles": [
+        "country-pop"
+      ],
+      "sourceIds": [
+        "S13"
+      ]
+    },
+    {
+      "id": "luther-palette",
+      "bucket": "harmony",
+      "title": "R&B-pop can be guitar + EP + strings + synth bass",
+      "body": "Luther\u2019s prominent instruments: synth bass, primarily electronic drums, acoustic guitar, electric piano, string section. Tempo 69. Form I\u2013A\u2013PC\u2013B\u2013A\u2013PC\u2013B\u2013C\u2013O.",
+      "styles": [
+        "rnb-soul-pop"
+      ],
+      "sourceIds": [
+        "S03"
+      ]
+    },
+    {
+      "id": "verse-incomplete",
+      "bucket": "arrange",
+      "title": "Keep verse one incomplete",
+      "body": "Pop-drop analysis of Don\u2019t Start Now: soft sparse verse, then bass/perc added in the second half, then prechorus ascent. Chorus one is the first full combination, not the first new instrument.",
+      "styles": [
+        "dance-disco-pop",
+        "edm-pop",
+        "midtempo-pop"
+      ],
+      "sourceIds": [
+        "S15"
+      ]
+    },
+    {
+      "id": "final-plus-one",
+      "bucket": "arrange",
+      "title": "Save one new color for the last chorus",
+      "body": "Closing rhetoric includes late-song intensification. Add one reserved color (ad-libs, ride, extra stack, new harmony register) only at the end.",
+      "styles": [
+        "any"
+      ],
+      "structures": [
+        "any"
+      ],
+      "sourceIds": [
+        "S29"
+      ]
+    },
+    {
+      "id": "bridge-thin",
+      "bucket": "arrange",
+      "title": "Thin the bridge on purpose",
+      "body": "Bridge is a departure module. Drop kit or bass, keep claps or a new vocal color, then rebuild. HSD still finds bridges on a large majority of pop hits in earlier trend reports.",
+      "styles": [
+        "any"
+      ],
+      "structures": [
+        "i-v-pc-c-v-pc-c-b-o",
+        "ababcb",
+        "three-chorus-double-final",
+        "vpc-postchorus"
+      ],
+      "sourceIds": [
+        "S04",
+        "S29"
+      ]
+    },
+    {
+      "id": "module-8",
+      "bucket": "form",
+      "title": "Stay on 4- and 8-bar modules",
+      "body": "Ensign: most modules are 8, 12, or 16 bars (multiples of 4), seldom longer than 16. Point Blank: pop songs are often built from 8-bar blocks. This catalog only emits those attested lengths.",
+      "styles": [
+        "any"
+      ],
+      "structures": [
+        "any"
+      ],
+      "sourceIds": [
+        "S26",
+        "S27"
+      ]
+    },
+    {
+      "id": "44-default",
+      "bucket": "meter",
+      "title": "Default to 4/4; treat other meters as rare",
+      "body": "Tauberg: 96% of 2000\u20132018 #1s are 4/4. A 933-song 21st-century top-seller listen found 96.57% pure 4/4; leftovers cluster in 6/8, 12/8, and 3/4 \u2014 not 5/4 or 7/4 among those bestsellers.",
+      "styles": [
+        "any"
+      ],
+      "structures": [
+        "any"
+      ],
+      "sourceIds": [
+        "S23",
+        "S24"
+      ]
+    },
+    {
+      "id": "68-ballad",
+      "bucket": "meter",
+      "title": "6/8 is the main alternative for ballads",
+      "body": "Bennett\u2019s non-4/4 remainder is mostly compound meters (6/8, 12/8). This app only offers 6/8 or 3/4 in ballad, R&B-pop, and acoustic lanes.",
+      "styles": [
+        "pop-ballad",
+        "rnb-soul-pop",
+        "acoustic-folk-pop"
+      ],
+      "timeSignatures": [
+        "6-8",
+        "3-4"
+      ],
+      "sourceIds": [
+        "S24"
+      ]
+    },
+    {
+      "id": "intro-short",
+      "bucket": "form",
+      "title": "Keep intros short",
+      "body": "HSD 2011 pop-trends excerpt: #1 intros averaged shorter than #2\u2013#10; 88% of those #1s still had a proper intro. 4 or 8 bars matches Ensign\u2019s module sizes.",
+      "styles": [
+        "any"
+      ],
+      "structures": [
+        "any"
+      ],
+      "sourceIds": [
+        "S04",
+        "S26"
+      ]
+    },
+    {
+      "id": "false-end",
+      "bucket": "form",
+      "title": "A hard stop is attested",
+      "body": "The same 2011 HSD excerpt noted most top 10s ended abruptly (false ending) rather than a long proper outro. Prefer a short outro or sudden last-chorus stop.",
+      "styles": [
+        "midtempo-pop",
+        "dance-disco-pop",
+        "synth-pop-revival"
+      ],
+      "sourceIds": [
+        "S04"
+      ]
+    },
+    {
+      "id": "no-solo-default",
+      "bucket": "arrange",
+      "title": "Do not insert a guitar solo by default",
+      "body": "HSD 2011 pop-trends: solos were generally not in for that pop sample. Prefer an instrumental hook, vocal break, or post-chorus over a solo section.",
+      "styles": [
+        "dance-disco-pop",
+        "midtempo-pop",
+        "synth-pop-revival",
+        "trap-pop"
+      ],
+      "sourceIds": [
+        "S04"
+      ]
+    },
+    {
+      "id": "title-post",
+      "bucket": "vocal",
+      "title": "Title can also live in the post-chorus",
+      "body": "A 2024 country #1 listed title placement in both chorus and post-chorus. If you write a post-chorus, consider a title fragment there \u2014 not a new key.",
+      "styles": [
+        "country-pop",
+        "midtempo-pop",
+        "dance-disco-pop"
+      ],
+      "structures": [
+        "vpc-postchorus",
+        "country-vocal-breaks"
+      ],
+      "sourceIds": [
+        "S13"
+      ]
+    },
+    {
+      "id": "hum-delivery",
+      "bucket": "vocal",
+      "title": "Mix sung, rapped, and hummed deliveries if the lane allows",
+      "body": "Luther\u2019s lead delivery is tagged rapped, sung, and hummed. Country-pop #1s have used sung/rapped hybrid on verse 2 only.",
+      "styles": [
+        "rnb-soul-pop",
+        "trap-pop",
+        "country-pop"
+      ],
+      "sourceIds": [
+        "S03",
+        "S13"
+      ]
+    },
+    {
+      "id": "register-lift",
+      "bucket": "vocal",
+      "title": "Lift the lead register at the chorus",
+      "body": "Open Music Theory\u2019s Pride example: lead rises in register, BGVs enter, guitar doubles, dynamic jumps. Use register, not a key change (this app will not suggest one).",
+      "styles": [
+        "any"
+      ],
+      "structures": [
+        "any"
+      ],
+      "sourceIds": [
+        "S29"
+      ]
+    },
+    {
+      "id": "bpm-windows",
+      "bucket": "tempo",
+      "title": "Stay inside the lane\u2019s attested window",
+      "body": "Dance/nu-disco here is 118\u2013124 (Don\u2019t Start Now = 124). Midtempo clusters near HSD 2022\u2019s 99 average. Ballads include 53 and 69 BPM examples. Trap-pop is felt 68\u201390 with optional DAW \u00d72.",
+      "styles": [
+        "any"
+      ],
+      "structures": [
+        "any"
+      ],
+      "sourceIds": [
+        "S07",
+        "S09",
+        "S03",
+        "S14",
+        "S20"
+      ]
+    },
+    {
+      "id": "mean-120",
+      "bucket": "tempo",
+      "title": "120 is a long-run chart mean, not a law",
+      "body": "A Billboard 1958\u20132021 Spotify-metadata set had mean tempo 120 and yearly means from 114 to 126. Use it as background, not as every song\u2019s target.",
+      "styles": [
+        "midtempo-pop",
+        "synth-pop-revival"
+      ],
+      "sourceIds": [
+        "S10"
+      ]
+    },
+    {
+      "id": "fast-notation",
+      "bucket": "tempo",
+      "title": "Very high BPMs may be double-time notation",
+      "body": "HSD 2022 flagged 170\u2013179 BPM hits (As It Was, Stay, That\u2019s What I Want). Those often feel half-time. This app reports a felt pulse and, for trap-pop, a DAW double-time.",
+      "styles": [
+        "trap-pop",
+        "midtempo-pop"
+      ],
+      "sourceIds": [
+        "S09",
+        "S21"
+      ]
+    }
+  ]
+}
